@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let feedbackTipo = ""; 
     const needHelpButton = document.getElementById('needHelpButton');
+    const sessionId = 'session-' + Math.random().toString(36).substr(2, 9);
     const chatbotContainer = document.getElementById('chatbotContainer');
     const chatHeader = document.querySelector('.chat-header');
     const chatContent = document.getElementById('chatContent');
@@ -1036,23 +1038,23 @@ function renderNode(nodeId) {
     title.textContent = node.title;
     chatContent.appendChild(title);
 
-if (node.message) {
-    const card = document.createElement('div');
-    card.className = 'content-card';
+    if (node.message) {
+        const card = document.createElement('div');
+        card.className = 'content-card';
 
-    const messageElement = document.createElement('div');
-    messageElement.innerHTML = node.message;
+        const messageElement = document.createElement('div');
+        messageElement.innerHTML = node.message;
 
-    card.appendChild(messageElement);
-    chatContent.appendChild(card);
-}
+        card.appendChild(messageElement);
+        chatContent.appendChild(card);
+    }
 
-
-if (node.isInfoNode) {
+    if (node.isInfoNode) {
         setTimeout(() => {
-        mostrarFeedbackFinal();
-    }, 5000);
-}
+            mostrarFeedbackFinal();
+        }, 5000);
+    }
+
     if (node.options && node.options.length > 0) {
         node.options.forEach(opt => {
             const btn = document.createElement('div');
@@ -1065,16 +1067,15 @@ if (node.isInfoNode) {
                 <i class="fas fa-chevron-right"></i>
             `;
 
-            btn.querySelector('.option-text').addEventListener('click', () => {
-                historyStack.push(currentNodeId);
-                renderNode(opt.target);
-            });
+            // Un solo addEventListener aquí, más limpio:
             btn.addEventListener('click', () => {
+                registrarInteraccion(opt.target, opt.text); // Guarda cada clic
                 if (currentNodeId !== opt.target) {
                     historyStack.push(currentNodeId);
                 }
-                renderNode(opt.target);
+                renderNode(opt.target); // Navega al siguiente nodo
             });
+
             chatContent.appendChild(btn);
         });
 
@@ -1154,6 +1155,8 @@ function mostrarFeedbackFinal() {
 }
 
 function mostrarFormularioFeedback(tipo) {
+    feedbackTipo = tipo; // ← Guardar la opción elegida ("positivo" o "negativo")
+
     const chatContent = document.getElementById("chatContent");
 
     // Deshabilitar ambos botones y marcar el seleccionado
@@ -1198,39 +1201,33 @@ function mostrarFormularioFeedback(tipo) {
 }
 
 
+
 function mostrarGraciasFeedback() {
-    const chatContent = document.getElementById("chatContent");
-    const usefulFeedbackSection = document.getElementById("usefulFeedbackSection");
-    // Oculta formulario de feedback si existe
-    const formulario = document.querySelector(".feedback-form");
-    if (formulario) {
-        formulario.remove();
+    const comentario = document.getElementById("comentarioFeedback")?.value?.trim();
+
+    let textoFinal = "";
+
+    // Convertimos "positivo"/"negativo" a "Sí"/"No"
+    if (feedbackTipo === "positivo") {
+        textoFinal = "Sí";
+    } else if (feedbackTipo === "negativo") {
+        textoFinal = "No";
     }
 
-    if (usefulFeedbackSection) {
-        usefulFeedbackSection.remove();
+    if (comentario) {
+        textoFinal += " - Comentario: " + comentario;
     }
 
-    const feedbackCard = document.createElement("div");
-    feedbackCard.className = "feedback-card";
+    // Registrar la interacción
+    registrarInteraccion("encuesta_feedback", textoFinal);
 
-    const gracias = document.createElement("div");
-    gracias.className = "feedback-thanks";
-    gracias.innerHTML = `
-        <i class="fas fa-check-circle"></i>
-        <span>¡Gracias por tu comentario!</span>
-    `;
-    feedbackCard.appendChild(gracias);
-    chatContent.appendChild(feedbackCard);
-
-    scrollToBottom();
-
-    // Muestra el botón "Inicio" en el footer
-    const goStartBtn = document.getElementById("goStartButton");
-    if (goStartBtn) goStartBtn.style.display = "flex";
-
-
+    // Aquí puedes poner tu mensaje de agradecimiento o limpiar el formulario
+    const feedbackForm = document.querySelector(".feedback-form");
+    if (feedbackForm) {
+        feedbackForm.innerHTML = "<p style='text-align:center; font-weight:bold;'>¡Gracias por tu comentario!</p>";
+    }
 }
+
 
 
 
@@ -1255,6 +1252,21 @@ function updateGoStartButton(target) {
     }
 }
 
-
+function registrarInteraccion(objetivo, texto) {
+    fetch('guardar_interaccion.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            objetivo: objetivo,
+            texto: texto,
+            session_id: sessionId
+        })
+    })
+    .then(response => response.text())
+    .then(data => console.log('Interacción guardada:', data))
+    .catch(error => console.error('Error al guardar interacción:', error));
+}
 
 });
