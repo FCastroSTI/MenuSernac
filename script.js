@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     let feedbackTipo = ""; 
+    let breadcrumbPath = [];
     const needHelpButton = document.getElementById('needHelpButton');
     const sessionId = 'session-' + Math.random().toString(36).substr(2, 9);
     const chatbotContainer = document.getElementById('chatbotContainer');
@@ -7,6 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatContent = document.getElementById('chatContent');
     const footerBackButton = document.getElementById('footerBackButton');
     const goStartButton = document.getElementById('goStartButton');
+
+function agregarParents(chatbotFlow) {
+    const flowWithParent = JSON.parse(JSON.stringify(chatbotFlow)); // clonar
+
+    Object.keys(chatbotFlow).forEach(parentKey => {
+        const node = chatbotFlow[parentKey];
+        if (node.options) {
+            node.options.forEach(opt => {
+                if (flowWithParent[opt.target]) {
+                    flowWithParent[opt.target].parent = parentKey;
+                }
+            });
+        }
+    });
+
+    return flowWithParent;
+}
 
 const chatbotFlow = {
     start: {
@@ -405,7 +423,6 @@ infoEliminarNoMolestar: {
     },
     infoGarantia: {
     title: "Garantía Legal y Devoluciones",
-    message: "Conoce tu derecho a garantía (6x3), retracto y más.",
     options: [
         { text: "¿Qué es la Garantía Legal (6x3)?", subtitle: "Conoce tu derecho a cambio, reparación o devolución.", target: "garantiaQueEs" },
         { text: "¿Qué hacer si un producto nuevo falla?", subtitle: "Conoce las 3 opciones que tienes para exigir.", target: "garantiaProductoFalla" },
@@ -858,7 +875,6 @@ victimaFraude: {
 },
     infoViajes: {
   title: "Derechos en Viajes",
-  message: "Conoce tus derechos al viajar: vuelos, equipaje, agencias.",
   options: [
     { text: "¿Qué derechos tienes si tu vuelo se retrasa o cancela?", subtitle: "Conoce las compensaciones y opciones disponibles para ti.", target: "viajeVueloRetrasado" },
     { text: "¿Qué pasa si hay sobreventa de pasajes (overbooking)?", subtitle: "Tus derechos si te niegan el embarque por sobreventa.", target: "viajeOverbooking" },
@@ -1022,17 +1038,53 @@ simuladorComoFunciona: {
 }
 };
 
-
+const chatbotFlowWithParent = agregarParents(chatbotFlow);
 
     let historyStack = [];
     let currentNodeId = null;
 
 function renderNode(nodeId) {
     currentNodeId = nodeId;
-    const node = chatbotFlow[nodeId];
+    const node = chatbotFlowWithParent[nodeId];
     if (!node) return;
 
+    // Recalcular breadcrumbPath en base al parent de nodeId
+    breadcrumbPath = [];
+    let current = nodeId;
+    while (current) {
+        breadcrumbPath.unshift(current); // agrega al inicio
+        current = chatbotFlowWithParent[current]?.parent;
+    }
+
     chatContent.innerHTML = '';
+
+    // Generar el breadcrumb visual
+    const breadcrumbContainer = document.createElement('div');
+    breadcrumbContainer.className = 'breadcrumb-container';
+
+    breadcrumbPath.forEach((nodeKey, index) => {
+        const span = document.createElement('span');
+        span.className = 'breadcrumb-item';
+        span.textContent = (nodeKey === 'start') ? 'Inicio' : (chatbotFlowWithParent[nodeKey]?.title || nodeKey);
+        span.setAttribute('data-target', nodeKey);
+
+        // Al hacer clic en un breadcrumb, navegar a ese nodo
+        span.addEventListener('click', () => {
+            renderNode(nodeKey);
+        });
+
+        breadcrumbContainer.appendChild(span);
+
+        // Añadir separador si no es el último
+        if (index < breadcrumbPath.length - 1) {
+            const separator = document.createElement('span');
+            separator.className = 'breadcrumb-separator';
+            separator.textContent = ' / ';
+            breadcrumbContainer.appendChild(separator);
+        }
+    });
+
+    chatContent.appendChild(breadcrumbContainer);
 
     const title = document.createElement('h3');
     title.textContent = node.title;
@@ -1081,14 +1133,19 @@ function renderNode(nodeId) {
 
         updateGoStartButton(target);
     }
+    const chatFooter = document.getElementById("chatFooter");
+    const footerBackButton = document.getElementById("footerBackButton");
 
-    // Mostrar u ocultar el botón Volver según el historial
-    if (historyStack.length > 0) {
-        footerBackButton.style.display = 'flex'; // Mostrar botón
+    if (currentNodeId !== 'start') {
+        chatFooter.style.display = 'flex';
+        footerBackButton.style.display = 'flex';
     } else {
-        footerBackButton.style.display = 'none'; // Ocultar botón
+        chatFooter.style.display = 'none';
+        footerBackButton.style.display = 'none';
     }
+
 }
+
 
 
     needHelpButton.addEventListener('click', () => {
@@ -1152,6 +1209,7 @@ function mostrarFeedbackFinal() {
     feedbackPregunta.appendChild(titulo);
     feedbackPregunta.appendChild(botones);
     chatContent.appendChild(feedbackPregunta);
+    feedbackPregunta.scrollIntoView({ behavior: "smooth" });
 }
 
 function mostrarFormularioFeedback(tipo) {
@@ -1268,5 +1326,7 @@ function registrarInteraccion(objetivo, texto) {
     .then(data => console.log('Interacción guardada:', data))
     .catch(error => console.error('Error al guardar interacción:', error));
 }
+
+
 
 });
