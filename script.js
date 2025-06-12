@@ -422,13 +422,13 @@ infoEliminarNoMolestar: {
         { text: "¿Qué es la Garantía Legal (6x3)?", subtitle: "Conoce tu derecho a cambio, reparación o devolución.", target: "garantiaQueEs" },
         { text: "¿Qué hacer si un producto nuevo falla?", subtitle: "Conoce las 3 opciones que tienes para exigir.", target: "garantiaProductoFalla" },
         { text: "¿Cuál es el plazo para ejercer la Garantía Legal?", subtitle: "¿Cuánto tiempo tienes para usar tu garantía?", target: "garantiaPlazo" },
-        { text: "¿Puedes cambiar un producto si no te gustó?", subtitle: "Diferencia entre garantía legal y ticket de cambio voluntario.", target: "garantiaNoGusto" },
-        { text: "¿La Garantía aplica en productos usados?", subtitle: "Condiciones de garantía para productos de segunda mano.", target: "garantiaUsados" },
-        { text: "¿La Garantía aplica en liquidaciones?", subtitle: "¿Tienes los mismos derechos si compraste en liquidación?", target: "garantiaLiquidaciones" },
+        { text: "¿Puedes cambiar un producto si no te gustó?", subtitle: "Diferencia entre garantía legal y ticket de cambio voluntario.", target: "garantiaNoMeGusto" },
+        { text: "¿La Garantía aplica en productos usados?", subtitle: "Condiciones de garantía para productos de segunda mano.", target: "garantiaProductoUsado" },
+        { text: "¿La Garantía aplica en liquidaciones?", subtitle: "¿Tienes los mismos derechos si compraste en liquidación?", target: "garantiaLiquidacion" },
         { text: "¿Y si una empresa te obliga a hacer una revisión técnica?", subtitle: "¿Pueden condicionar tu garantía a una revisión técnica?", target: "garantiaRevisionTecnica" },
         { text: "¿Qué productos no tienen garantía ni cambio?", subtitle: "Conoce las excepciones a la garantía legal.", target: "garantiaExcepciones" },
         { text: "¿Puedes arrepentirte de una compra?", subtitle: "Tu derecho a retracto en compras a distancia.", target: "garantiaRetractoDistancia" },
-        { text: "¿Puedes arrepentirte en compras presenciales?", subtitle: "Cuándo aplica el retracto si compraste presencialmente.", target: "garantiaRetractoPresencial" },
+        { text: "¿Puedes arrepentirte en compras presenciales?", subtitle: "Cuándo aplica el retracto si compraste presencialmente.", target: "retractoPresencial" },
         { text: "¿Cómo ejercer tu derecho a Retracto?", subtitle: "Cómo y cuándo ejercer tu derecho a retracto.", target: "garantiaEjercerRetracto" },
         { text: "¿Garantía Legal vs Ticket de Cambio?", subtitle: "Entiende las diferencias clave entre ambos.", target: "garantiaVsTicket" },
         { text: "¿Te pueden exigir el embalaje original?", subtitle: "¿Es requisito tener el embalaje para ejercer tu garantía?", target: "garantiaEmbalaje" }
@@ -442,8 +442,8 @@ infoEliminarNoMolestar: {
         },
     garantiaProductoFalla: {
         title: "¿Qué hacer si un producto nuevo falla?",
-        message: `Puedes exigir la devolución, cambio o reparación del producto gratis (tú eliges) dentro de los 6 meses desde la compra o recepción.<br>
-        Si la empresa no respeta este derecho, ingresa un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+        message: `Puedes exigir la devolución, cambio o reparación del producto gratis (tú eliges) dentro de los 6 meses desde la compra o recepción. 
+        Si la empresa no respeta este derecho, ingresa un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>. 
         Mira el especial <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
         isInfoNode: true
     },
@@ -466,63 +466,63 @@ infoEliminarNoMolestar: {
         isInfoNode: true
     },
     garantiaLiquidacion: {
-  title: "¿La Garantía aplica en liquidaciones?",
-  message: `Sí, no por comprar más barato tienes menos derechos.<br>
-  Conoce más sobre la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
-  isInfoNode: true
-},
+    title: "¿La Garantía aplica en liquidaciones?",
+    message: `Sí, no por comprar más barato tienes menos derechos.<br>
+    Conoce más sobre la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
+    isInfoNode: true
+    },
 
-garantiaRevisionTecnica: {
-  title: "¿Y si una empresa te obliga a hacer una revisión técnica?",
-  message: `Las empresas no pueden poner barreras como condicionar la garantía a la revisión/definición de un servicio técnico.<br>
-  Si ocurre, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
-  Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
-  isInfoNode: true
-},
+    garantiaRevisionTecnica: {
+    title: "¿Y si una empresa te obliga a hacer una revisión técnica?",
+    message: `Las empresas no pueden poner barreras como condicionar la garantía a la revisión/definición de un servicio técnico.<br>
+    Si ocurre, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+    Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
+    isInfoNode: true
+    },
 
-garantiaExcepciones: {
-  title: "¿Qué productos no tienen garantía ni cambio?",
-  message: `No tienen garantía legal los productos que compraste en el comercio informal (sin boleta o factura).<br>
-  Tampoco los de segunda selección, usados o refaccionados, siempre y cuando te lo hayan advertido claramente antes de la compra.<br>
-  Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
-  isInfoNode: true
-},
+    garantiaExcepciones: {
+    title: "¿Qué productos no tienen garantía ni cambio?",
+    message: `No tienen garantía legal los productos que compraste en el comercio informal (sin boleta o factura).<br>
+    Tampoco los de segunda selección, usados o refaccionados, siempre y cuando te lo hayan advertido claramente antes de la compra.<br>
+    Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
+    isInfoNode: true
+    },
 
-retractoDistancia: {
-  title: "¿Puedes arrepentirte de una compra?",
-  message: `Si compras por internet (o a distancia) tienes 10 días desde la compra o recepción para devolver el producto sin uso y con su embalaje en buen estado.<br>
-  Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
-  isInfoNode: true
-},
+    garantiaRetractoDistancia: {
+    title: "¿Puedes arrepentirte de una compra?",
+    message: `Si compras por internet (o a distancia) tienes 10 días desde la compra o recepción para devolver el producto sin uso y con su embalaje en buen estado.<br>
+    Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
+    isInfoNode: true
+    },
 
-retractoPresencial: {
-  title: "¿Puedes arrepentirte en compras presenciales?",
-  message: `Si compraste presencialmente pero no tuviste acceso directo al producto (por ejemplo, por catálogo), el derecho a retracto también aplica, salvo que la empresa informe su exclusión.<br>
-  Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
-  isInfoNode: true
-},
+    retractoPresencial: {
+    title: "¿Puedes arrepentirte en compras presenciales?",
+    message: `Si compraste presencialmente pero no tuviste acceso directo al producto (por ejemplo, por catálogo), el derecho a retracto también aplica, salvo que la empresa informe su exclusión.<br>
+    Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
+    isInfoNode: true
+    },
 
-retractoEjercer: {
-  title: "¿Cómo ejercer tu derecho a Retracto?",
-  message: `Informa a la empresa que anulas la compra dentro de 10 días (desde compra o recepción).<br>
-  El plazo se amplía a 90 días si no enviaron confirmación escrita del contrato.<br>
-  Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
-  isInfoNode: true
-},
+    garantiaEjercerRetracto: {
+    title: "¿Cómo ejercer tu derecho a Retracto?",
+    message: `Informa a la empresa que anulas la compra dentro de 10 días (desde compra o recepción).<br>
+    El plazo se amplía a 90 días si no enviaron confirmación escrita del contrato.<br>
+    Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
+    isInfoNode: true
+    },
 
-garantiaVsCambio: {
-  title: "¿Garantía Legal vs Ticket de Cambio?",
-  message: `La Garantía Legal es un derecho por ley cuando un producto nuevo falla.<br>
-  En cambio el Ticket de Cambio es una oferta voluntaria de la empresa para que puedas cambiar por gusto o talla dentro de un plazo definido.<br>
-  Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
-  isInfoNode: true
-},
+    garantiaVsTicket: {
+    title: "¿Garantía Legal vs Ticket de Cambio?",
+    message: `La Garantía Legal es un derecho por ley cuando un producto nuevo falla.<br>
+    En cambio el Ticket de Cambio es una oferta voluntaria de la empresa para que puedas cambiar por gusto o talla dentro de un plazo definido.<br>
+    Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
+    isInfoNode: true
+    },
 
-garantiaEmbalaje: {
-  title: "¿Te pueden exigir el embalaje original?",
-  message: `No, para ejercer la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal</a>, las empresas no pueden exigir embalaje original si el producto nuevo falla, ni tampoco cobrar si no lo tienes.`,
-  isInfoNode: true
-},
+    garantiaEmbalaje: {
+    title: "¿Te pueden exigir el embalaje original?",
+    message: `No, para ejercer la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal</a>, las empresas no pueden exigir embalaje original si el producto nuevo falla, ni tampoco cobrar si no lo tienes.`,
+    isInfoNode: true
+    },
 
 
 
@@ -627,7 +627,7 @@ InfoComprasDerFin: {
 
 cerrarProducto: {
   title: "¿No te dejan cerrar un producto?",
-  message: `Tienes derecho a cerrar cualquier producto financiero en 5 días (si pagaste lo adeudado). Si no cumplen, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Conoce más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `Tienes derecho a cerrar cualquier producto financiero en 5 días (si pagaste lo adeudado). Si no cumplen, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>. Conoce más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
@@ -643,26 +643,26 @@ derechosCredito: {
 vigenciaCotizacion: {
   title: "Vigencia de una cotización",
   message: `La cotización de una institución financiera debe durar al menos 7 días hábiles, para que tengas tiempo
-  de compararla con otras opciones.<br><a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
+  de compararla con otras opciones. <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
 ventasAtadas: {
   title: "¿Cuáles son las ventas atadas?",
   message: `Las instituciones financieras no pueden 'amarrarte' con productos/servicios no solicitados (ej. obligarte a contratar seguros automotriz al pedir tarjeta).
-  Tienes la libertad de acptarlos o no.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  Tienes la libertad de aceptarlos o no.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 cambioContrato: {
   title: "¿Te pueden cambiar un contrato?",
-  message: `No pueden cambiar las condiciones o los costos sin tu expreso consentimiento (por ejemplo, no te pueden subir las comisiones de tu tarjeta unilateralmente). Si te pasa esto, haz un Reclamo en el<a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `No pueden cambiar las condiciones o los costos sin tu expreso consentimiento (por ejemplo, no te pueden subir las comisiones de tu tarjeta unilateralmente). Si te pasa esto, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 productosNoSolicitados: {
   title: "¿Te pueden enviar productos no solicitados?",
-  message: `Está prohibido enviar productos financieros que no hayas solicitado. Reclama en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Lee más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `Está prohibido que te envíen a tu domicilio o lugar de trabajo productos financieros o contratos que no has solicitado ni aceptado previamente. Si te pasa, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>. <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
@@ -695,8 +695,7 @@ portabilidadFinanciera: {
 
 cambioTarjeta: {
   title: "¿Te cobran por cambiar la tarjeta?",
-  message: `No, las entidades financieras no pueden cobrarte por el cambio o la reposición del plástico (material) de tu tarjeta de crédito o débito. Tampoco pueden exigirte firmar un nuevo contrato con condiciones diferentes solo por este cambio.<br>
-  <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
+  message: `No, las entidades financieras no pueden cobrarte por el cambio o la reposición del plástico (material) de tu tarjeta de crédito o débito. Tampoco pueden exigirte firmar un nuevo contrato con condiciones diferentes solo por este cambio. <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
@@ -726,14 +725,13 @@ fraudesFinancieros: {
 
 telecoDerechos: {
   title: "Principales Derechos en Telecomunicaciones",
-  message: `Tienes derecho a terminar tu contrato de telecomunicaciones (internet, teléfono, TV) en cualquier momento y sin causa. No pueden negarse ni imponerte requisitos o multas por ello. Cualquier condición que te pongan para dificultarlo es una infracción.<br>Conoce más en<a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
+  message: `Tienes derecho a terminar tu contrato de telecomunicaciones (internet, teléfono, TV) en cualquier momento y sin causa. No pueden negarse ni imponerte requisitos o multas por ello. Cualquier condición que te pongan para dificultarlo es una infracción.<br>Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
   isInfoNode: true
 },
 
 telecoInterrupcion: {
   title: "¿Qué hacer si tu servicio se interrumpe?",
-  message: `Tienes derecho a descuentos en tu boleta e incluso indemnizaciones si te suspenden, alteran o interrumpen el servicio contratado (teléfono, internet, TV pagada) por causas imputables a la empresa. <br>
-  Si vulneran tus derechos, ingresa un Reclamo en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal</a>. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
+  message: `Tienes derecho a descuentos en tu boleta e incluso indemnizaciones si te suspenden, alteran o interrumpen el servicio contratado (teléfono, internet, TV pagada) por causas imputables a la empresa. Si vulneran tus derechos, ingresa un Reclamo en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal</a>. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
   isInfoNode: true
 },
 
@@ -754,7 +752,7 @@ telecoTerminar: {
 
 telecoRequisitos: {
   title: "¿Te exigen requisitos para terminar?",
-  message: `No pueden exigirte requisitos como no tener deudas o devolver equipos antes del cierre. <br><a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más sobre MQS</a>.`,
+  message: `Las empresas no pueden negarse a terminar tu contrato ni ponerte trabas como, por ejemplo, exigir que no tengas deudas o que devuelvas primero los equipos, etc. Cualquier requisito o condición para tardar el cierre de contrato, es una infracción. Usa <a href='https://www.sernac.cl/app/consumidor/' target='_blank'>Me Quiero Salir</a> en el Portal. <a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más sobre MQS</a>`,
   isInfoNode: true
 },
 
@@ -806,7 +804,7 @@ telecoAdelantado: {
 
 cobranzaExtrajudicial: {
   title: "¿Qué es la cobranza extrajudicial?",
-  message: `Es el procedimiento que usan las empresas o agencias externas para informarte sobre una mora o retraso en tus pagos, antes de iniciar acciones judiciales.<br>Conoce más en<a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Cobranzas Extrajudiciales</a>.`,
+  message: `Es el procedimiento que usan las empresas o agencias externas para informarte sobre una mora o retraso en tus pagos, antes de iniciar acciones judiciales.<br>Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Cobranzas Extrajudiciales</a>.`,
   isInfoNode: true
 },
 
@@ -836,7 +834,7 @@ cobranzaHostigamiento: {
 
 cobranzaReclamar: {
   title: "¿Cómo reclamar por hostigamiento?",
-  message: `Sigue estos pasos:
+  message: `Sigue estos pasos:<br>
   • Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a> (puedes usar ClaveÚnica o Clave SERNAC).<br>
   • Selecciona la opción 'Reclamo' y luego 'No me hostiguen cobranzas'.<br>
   • Acepta las condiciones, completa la información solicitada y presiona 'Enviar'.<br>
@@ -986,7 +984,7 @@ presupuestoComoFunciona: {
 • <strong>Verde</strong>: ¡Felicitaciones! Tienes un presupuesto equilibrado y recomendable.<br>
 • <strong>Amarillo</strong>: ¡Atención! Estás cerca del límite de tu carga financiera recomendada.<br>
 • <strong>Rojo</strong>: ¡Cuidado! Excedes la carga financiera máxima recomendada, lo que aumenta tu riesgo de sobreendeudamiento.<br>
-Usa la <a href='https://www.sernac.cl/app/calculadora/' target='_blank'>Calculadora</a>Calculadora para ver tu resultado.`,
+Usa la <a href='https://www.sernac.cl/app/calculadora/' target='_blank'>Calculadora</a> para ver tu resultado.`,
   isInfoNode: true
 }
 ,
@@ -1066,7 +1064,7 @@ simuladorComoFunciona: {
   isInfoNode: true
 },
     horarioOficinas: {
-        title: "Horario y Oficinas",
+        title: "Horarios de atención y direcciones",
         message: "",
         options: [
             { text: "Oficinas Regionales SERNAC", target: "infoOficinas", subtitle: "Encuentra las direcciones y horarios de nuestras oficinas regionales." },
