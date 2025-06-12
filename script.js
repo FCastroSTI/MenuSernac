@@ -31,48 +31,48 @@ const chatbotFlow = {
         title: "¿En qué te puedo ayudar?",
         message: "",
         options: [
-            { text: "Reclamos y Consultas", target: "reclamosConsultas", subtitle: "Información sobre reclamos y consultas generales." },
-            { text: "Otros Trámites", target: "otrosTramites", subtitle: "Realiza otros trámites relacionados con consumo." },
-            { text: "Conoce tus Derechos", target: "conoceDerechos", subtitle: "Infórmate sobre tus derechos como consumidor." },
-            { text: "Herramientas y Consejos", target: "herramientasConsejos", subtitle: "Utiliza nuestras herramientas y consejos útiles." },
-            { text: "Horario y Oficinas", target: "horarioOficinas", subtitle: "Consulta horarios y ubicaciones de oficinas." }
+            { text: "Reclamos y consultas", target: "reclamosConsultas", subtitle: "Cómo ingresar reclamos, hacer consultas y revisar tus casos." },
+            { text: "Otros trámites", target: "otrosTramites", subtitle: "Ingresar alertas, termina contratos o bloquea publicidad." },
+            { text: "Conoce tus derechos", target: "conoceDerechos", subtitle: "Infórmate sobre tus derechos como persona consumidora." },
+            { text: "Herramientas y consejos", target: "herramientasConsejos", subtitle: "Encuentra calculadoras, comparadores y simuladores útiles." },
+            { text: "Horario de atencion y dirección de las oficinas", target: "horarioOficinas", subtitle: "Encuentra nuestras oficinas regionales y convenios." }
         ]
     },
     reclamosConsultas: {
         title: "Reclamos y Consultas",
         message: "",
         options: [
-            { text: "Todo sobre Reclamos", target: "todoReclamos", subtitle: "Todo lo que necesitas saber para ingresar reclamos." },
-            { text: "Hacer una Consulta", target: "hacerConsulta", subtitle: "Consulta tus dudas sobre consumo." },
-            { text: "Ver Estado de tus casos", target: "estadoCasos", subtitle: "Consulta el estado actual de tus casos." },
-            { text: "Comportamiento de las empresas", target: "comportamientoEmpresas", subtitle: "Historial de comportamiento de empresas." }
+            { text: "Todo sobre Reclamos", target: "todoReclamos", subtitle: "Ingresa reclamos, conoce requisitos, revisa el estado y más." },
+            { text: "Hacer una Consulta", target: "hacerConsulta", subtitle: "Resuelve tus dudas sobre temas de consumo." },
+            { text: "Ver Estado de tus casos (Portal)", target: "estadoCasos", subtitle: "Revisa el estado de todos tus trámites." },
+            { text: "Comportamiento de las empresas (Boletín)", target: "comportamientoEmpresas", subtitle: "Compara cómo responden a tus reclamos." }
         ]
     },
     todoReclamos: {
         title: "Todo sobre Reclamos",
         message: "",
         options: [
-            { text: "¿Cómo ingresar un Reclamo?", target: "infoIngresarReclamo", subtitle: "Aprende a ingresar un reclamo." },
-            { text: "¿Qué saber antes de reclamar?", target: "infoSaberReclamo", subtitle: "Información importante antes de reclamar." },
-            { text: "¿Cómo adjuntar antecedentes?", target: "infoAdjuntar", subtitle: "Pasos para adjuntar documentos." },
-            { text: "¿Cómo saber el estado de tu reclamo?", target: "infoEstadoReclamo", subtitle: "Consulta el estado del reclamo." },
-            { text: "¿Cómo ver casos ya cerrados?", target: "infoCasosCerrados", subtitle: "Consulta casos cerrados." },
-            { text: "¿Cuál es la ruta del Reclamo?", target: "infoRuta", subtitle: "Línea de tiempo de gestión del reclamo." },
-            { text: "¿Qué hacer si no estás conforme?", target: "infoInconformidad", subtitle: "Pasos si no estás conforme." },
-            { text: "¿Qué hacer si la empresa no cumple?", target: "infoIncumplimiento", subtitle: "Qué hacer si la empresa no cumple." },
-            { text: "¿Quieres desistir de un Reclamo?", target: "infoDesistir", subtitle: "Pasos para desistir del reclamo." }
+            { text: "¿Cómo ingresar un Reclamo?", target: "infoIngresarReclamo", subtitle: "Te explicamos los pasos para iniciar tu reclamo." },
+            { text: "¿Qué saber antes de reclamar?", target: "infoSaberReclamo", subtitle: "Conoce los requisitos y plazos importantes para tu reclamo." },
+            { text: "¿Cómo adjuntar antecedentes?", target: "infoAdjuntar", subtitle: "Sigue las intrucciones para agregar documentos a tu caso." },
+            { text: "¿Cómo saber el estado de tu reclamo?", target: "infoEstadoReclamo", subtitle: "Verifica el avance de tu reclamo." },
+            { text: "¿Cómo ver casos ya cerrados?", target: "infoCasosCerrados", subtitle: "Revisa el resultado de tus reclamos finalizados." },
+            { text: "¿Cuál es la ruta del Reclamo?", target: "infoRuta", subtitle: "Conoce las etapas y posibles resultados de tu reclamo." },
+            { text: "¿Qué hacer si no estás conforme?", target: "infoInconformidad", subtitle: "Pasos a seguir si no aceptas la respuesta a tu reclamo." },
+            { text: "¿Qué hacer si la empresa no cumple la solución?", target: "infoIncumplimiento", subtitle: "Te indicamos cómo avisar si no cumplen lo acordado en tu caso." },
+            { text: "¿Quieres desistir de un Reclamo?", target: "infoDesistir", subtitle: "Te explicamos cómo anular un reclamo que ya ingresaste." }
         ]
     },
     hacerConsulta: {
         title: "Hacer una Consulta",
         message: "",
         options: [
-            { text: "¿Cómo ingresar una Consulta?", target: "infoIngresarConsulta", subtitle: "Pasos para ingresar una consulta." },
-            { text: "¿Qué saber al ingresar una Consulta?", target: "infoSaberConsulta", subtitle: "Aspectos a considerar al ingresar una consulta." },
-            { text: "¿Cómo revisar el estado de tu Consulta?", target: "infoEstadoConsulta", subtitle: "Consulta el estado de tu consulta." }
+            { text: "¿Cómo ingresar una Consulta?", target: "infoIngresarConsulta", subtitle: "Te explicamos los pasos para realizar tu consulta." },
+            { text: "¿Qué saber al ingresar una Consulta?", target: "infoSaberConsulta", subtitle: "Conoce la diferencia con los reclamos antes de ingresar tu consulta." },
+            { text: "¿Cómo revisar el estado de tu Consulta?", target: "infoEstadoConsulta", subtitle: "Verifica la respuesta a tu consulta." }
         ]
     },
-    estadoCasos: { title: "Estado de tus casos", message: `
+    estadoCasos: { title: "¿En qué están tus casos?", message: `
         Puedes revisar el estado de todos tus Reclamos, Consultas, Alertas Ciudadanas, 
         solicitudes de 'Me Quiero Salir' y 'No Molestar' ingresando al 
         <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> 
@@ -95,85 +95,82 @@ const chatbotFlow = {
 },
 boletinUsarlo: {
     title: "¿Qué es y cómo usarlo?",
-    message: `Es un buscador del comportamiento de las empresas que te permite conocer su historial frente a los reclamos que reciben. 
-    <br><a href="https://www.sernac.cl/boletinempresas" target="_blank">Accede al Boletín Empresas</a>.
-    <br><a href="https://youtu.be/BOYiqOjRdLw" target="_blank">Mira cómo usarlo (Video)</a>.`,
+    message: `Es un buscador del comportamiento de las empresas que te permite conocer su historial frente a los reclamos que reciben. Accede al 
+    <a href="https://www.sernac.cl/boletinempresas" target="_blank">Boletín Empresas</a>.<br>
+    Mira <a href="https://youtu.be/BOYiqOjRdLw" target="_blank">cómo usarlo (Video)</a>.`,
     isInfoNode: true
 },
 boletinIndicadores: {
     title: "¿Qué indicadores compara?",
-    message: `Puedes comparar por empresa:
-    <ul>
-        <li>Cantidad de casos recibidos y su porcentaje en el mercado.</li>
-        <li>Días promedio que tarda en responder v/s el promedio del mercado.</li>
-        <li>Porcentaje de casos respondidos v/s el promedio del mercado.</li>
-        <li>Porcentaje de soluciones ofrecidas del total de casos respondidos.</li>
-    </ul>
-    <a href="https://www.sernac.cl/boletinempresas" target="_blank">Accede al Boletín Empresas</a> para ver estos datos.`,
+    message: `Puedes comparar por empresa:<br>
+        • Cantidad de casos recibidos y su porcentaje en el mercado.<br>
+        • Días promedio que tarda en responder v/s el promedio del mercado.<br>
+        • Porcentaje de casos respondidos v/s el promedio del mercado.<br>
+        • Porcentaje de soluciones ofrecidas del total de casos respondidos.<br><br>
+
+    Accede al <a href="https://www.sernac.cl/boletinempresas" target="_blank">Boletín Empresas</a> para ver estos datos.`,
     isInfoNode: true
 },
     infoIngresarReclamo: { title: "¿Cómo ingresar un Reclamo?", message: `Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> con tu ClaveÚnica o Clave SERNAC. 
-    Si es tu primera visita, <a href="https://www.sernac.cl/app/consumidor/index.php?a=registro" target="_blank">regístrate aquí</a>. 
+    Si es tu primera visita, <a href="https://www.sernac.cl/app/consumidor/index.php?a=registro" target="_blank">regístrate</a>. 
     Te recomendamos adjuntar antecedentes que acrediten los hechos (boleta, contrato, etc.).`, isInfoNode: true },
     infoSaberReclamo: { title: "¿Qué saber antes de reclamar?", message: `
-        <strong>Debes saber:</strong><br>
+        Debes saber:<br>
         • Haber comprado o contratado con el comercio establecido.<br>
         • Ser el/la titular afectado(a).<br>
         • No ser empresa.<br><br>
         La gestión dura máximo 18 días hábiles.<br>
         Obtén más información en 
-        <a href="https://www.sernac.cl/portal/617/w3-article-9178.html" target="_blank">Conoce más sobre el Reclamo</a> 
+        '<a href="https://www.sernac.cl/portal/617/w3-article-9178.html" target="_blank">Conoce más sobre el Reclamo</a>' 
         y en la 
-        <a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">Ruta de tu Reclamo</a>.
+        '<a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">Ruta de tu Reclamo</a>'.
     `, isInfoNode: true },
     infoAdjuntar: { title: "¿Cómo adjuntar antecedentes?", message: `
-        <strong>Sigue estos pasos:</strong><br>
+        Sigue estos pasos:<br>
         • Ingresa al 
         <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> 
         con tu ClaveÚnica o Clave SERNAC.<br>
-        • Selecciona <em>'Estado de tus casos'</em>.<br>
-        • Al hacer clic en el número del caso, podrás adjuntar documentos en la pestaña 
-        <em>'Agregar información'</em>.
+        • Selecciona 'Estado de tus casos'.<br>
+        • Al hacer clic en el número del caso, podrás adjuntar documentos en la pestaña 'Agregar información'.
     `, isInfoNode: true },
     infoEstadoReclamo: { title: "¿Cómo saber el estado de tu reclamo?", message: `
-        <strong>Sigue estos pasos:</strong><br>
+        Sigue estos pasos:<br>
         • Ingresa al 
         <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> 
         con tu ClaveÚnica o Clave SERNAC.<br>
-        • Escoge <em>'Estado de tus casos'</em>.<br>
+        • Escoge 'Estado de tus casos'.<br>
         • Selecciona el número de tu Reclamo para conocer la respuesta.
     `, isInfoNode: true },
     infoCasosCerrados: { title: "¿Cómo ver casos ya cerrados?", message: `
-        <strong>Sigue estos pasos:</strong><br>
+        Sigue estos pasos:<br>
         • Ingresa al 
         <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> 
         con tu ClaveÚnica o Clave SERNAC.<br>
-        • Escoge <em>'Estado de tus casos'</em>.<br>
+        • Escoge 'Estado de tus casos'.<br>
         • Busca y selecciona el número del caso que ya está cerrado para revisar el resultado final.
     `, isInfoNode: true },
     infoRuta: { title: "¿Cuál es la ruta del Reclamo?", message: `
         Es la línea de tiempo de la gestión de tu Reclamo: pasos, etapas, resultados posibles y recomendaciones.<br>
         Revisa el especial 
-        <a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">‘La Ruta de tu Reclamo’</a>.
+        '<a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">La Ruta de tu Reclamo</a>'.
     `, isInfoNode: true },
     infoInconformidad: { title: "¿Qué hacer si no estás conforme?", message: `
-        Puedes denunciar y demandar a la empresa sin necesidad de un abogado(a) en el Juzgado de Policía Local.<br>
-        Descarga el 
+        Puedes denunciar y demandar a la empresa sin necesidad de un abogado(a) en el Juzgado de Policía Local. Descarga el 
         <a href="https://www.sernac.cl/portal/618/w3-article-57407.html" target="_blank">Formulario para denuncia y demanda</a>.
     `, isInfoNode: true },
-    infoIncumplimiento: { title: "¿Qué hacer si la empresa no cumple?", message: `
-        Puedes usar la opción <em>'Avisar Incumplimiento'</em> en el 
+    infoIncumplimiento: { title: "¿Qué hacer si la empresa no cumple la solución?", message: `
+        Puedes usar la opción 'Avisar Incumplimiento' en el 
         <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>, 
-        dentro de la sección <em>'Estado de tus casos'</em>. Así, podremos monitorear el comportamiento de la empresa e insistirle para que cumpla lo que te ofreció.<br>
+        dentro de la sección 'Estado de tus casos'. Así, podremos monitorear el comportamiento de la empresa e insistirle para que cumpla lo que te ofreció.<br>
         Revisa también la 
-        <a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">‘Ruta de tu Reclamo’</a>.
+        '<a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">Ruta de tu Reclamo</a>'.
     `, isInfoNode: true },
     infoDesistir: { title: "¿Quieres desistir de un Reclamo?", message: `
-        Puedes usar la opción <em>'Avisar Incumplimiento'</em> en el 
-        <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>, 
-        dentro de la sección <em>'Estado de tus casos'</em>. Así, podremos monitorear el comportamiento de la empresa e insistirle para que cumpla lo que te ofreció.<br>
-        Revisa también la 
-        <a href="https://www.sernac.cl/portal/604/w3-article-7563.html" target="_blank">‘Ruta de tu Reclamo’</a>.
+        Para desistir tu reclamo:<br> 
+        • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+        • Dirígete a 'Estado de tus casos'.<br>
+        • Selecciona el Reclamo que deseas anular.<br>
+        • En la pregunta '¿Quieres desistir del Reclamo?', haz clic en la opción 'Sí'.
     `, isInfoNode: true },
     infoIngresarConsulta: { title: "¿Cómo ingresar una Consulta?", message: `
         Ingresa al 
@@ -185,43 +182,42 @@ boletinIndicadores: {
     infoSaberConsulta: { title: "¿Qué saber al ingresar una Consulta?", message: `
         Si tienes dudas sobre temas de consumo y la aplicación de la Ley 
         (por ejemplo, si tu caso es una infracción o no), puedes hacernos una consulta. 
-        La gestión es de máximo 2 días hábiles.<br><br>
-        <a href="https://www.sernac.cl/portal/617/w3-article-9182.html" target="_blank">Conoce más sobre la Consulta</a>.
+        La gestión es de máximo 2 días hábiles. <a href="https://www.sernac.cl/portal/617/w3-article-9182.html" target="_blank">Conoce más sobre la Consulta</a>.
     `, isInfoNode: true },
     infoEstadoConsulta: { title: "¿Cómo revisar el estado de tu Consulta?", message: `
-        Si tienes dudas sobre temas de consumo y la aplicación de la Ley 
-        (por ejemplo, si tu caso es una infracción o no), puedes hacernos una consulta. 
-        La gestión es de máximo 2 días hábiles.<br><br>
-        <a href="https://www.sernac.cl/portal/617/w3-article-9182.html" target="_blank">Conoce más sobre la Consulta</a>.
+        Sigue estos pasos:<br>
+        • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> con tu ClaveÚnica o Clave SERNAC.<br>
+        • Escoge 'Estado de tus casos'.
+        • Selecciona el número de tu Consulta para ver la respuesta.
     `, isInfoNode: true },
     otrosTramites: {
         title: "Otros Trámites",
         options: [
-            { text: "Ingresar Alerta Ciudadana", target: "alertaCiudadana", subtitle: "Informa conductas generales de empresas." },
-            { text: "Me Quiero Salir", target: "infoSalir", subtitle: "Finaliza contratos de Telecomunicaciones o Seguros." },
-            { text: "No Molestar", target: "infoNoMolestar", subtitle: "Solicita que dejen de enviarte spam." }
+            { text: "Ingresar Alerta Ciudadana", target: "alertaCiudadana", subtitle: "Informa sobre conductas de empresas que afectan a muchas personas consumidoras." },
+            { text: "Me Quiero Salir", target: "infoSalir", subtitle: "Finaliza tus contratos de Telecoluminaciones o Seguros Generales." },
+            { text: "No Molestar", target: "infoNoMolestar", subtitle: "Solicita que dejen de enviarte spam o publicidad no deseada." }
         ]
     },
     alertaCiudadana: {
         title: "Ingresar Alerta Ciudadana",
         message: "",
         options: [
-            { text: "¿Qué es una Alerta Ciudadana?", target: "infoQueAlerta", subtitle: "Definición de Alerta Ciudadana." },
-            { text: "¿Cómo ingresar una Alerta?", target: "infoIngresarAlerta", subtitle: "Pasos para ingresar una Alerta Ciudadana." },
-            { text: "¿Qué saber al ingresar una Alerta?", target: "infoSaberAlerta", subtitle: "Información sobre la Alerta Ciudadana." },
-            { text: "¿Puedes adjuntar documentos?", target: "infoAdjuntarAlerta", subtitle: "Posibilidad de adjuntar documentos." }
+            { text: "¿Qué es una Alerta Ciudadana?", target: "infoQueAlerta", subtitle: "Infórmate sobre cómo reportar conductas masivas de empresas." },
+            { text: "¿Cómo ingresar una Alerta?", target: "infoIngresarAlerta", subtitle: "Te indicamos los pasos para ingresar tu reporte." },
+            { text: "¿Qué saber al ingresar una Alerta?", target: "infoSaberAlerta", subtitle: "Conoce la diferencia con los reclamos y cuándo usarla." },
+            { text: "¿Puedes adjuntar documentos?", target: "infoAdjuntarAlerta", subtitle: "Averigua si puedes agregar evidencia a tu alerta." }
         ]
     },
-    infoQueAlerta: { title: "¿Qué es una Alerta Ciudadana?", message: "Es una herramienta para informar al SERNAC conductas de empresas que te afectan a ti y a otros consumidores. <br><a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>Conoce más sobre la Alerta Ciudadana</a>", isInfoNode: true },
-    infoIngresarAlerta: { title: "¿Cómo ingresar una Alerta?", message: "Ingresa al Portal del Consumidor <a href='http://www.sernac.cl/app/consumidor' target='_blank'>aquí</a> con tu ClaveÚnica o Clave SERNAC. Si es tu primera visita, <a href='https://www.sernac.cl/app/consumidor/index.php?a=registro' target='_blank'>regístrate</a>. Adjunta antecedentes (boleta, fotos, etc.) al ingresar la alerta.<br><br>También puedes ir a nuestras <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-13742.html' target='_blank'>Direcciones Regionales</a>.", isInfoNode: true },
-    infoSaberAlerta: { title: "¿Qué saber al ingresar una Alerta?", message: "Recuerda que la Alerta Ciudadana informa conductas generales, <strong>NO</strong> resuelve un problema tuyo particular (para eso tienes el Reclamo).<br><br>Conoce más sobre la Alerta Ciudadana <a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>aquí</a>.", isInfoNode: true },
-    infoAdjuntarAlerta: { title: "¿Puedes adjuntar documentos?", message: "Sí, puedes adjuntar documentos (fotos, etc.) <strong>ÚNICAMENTE</strong> al momento de ingresar la solicitud.<br><br>Conoce más <a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>aquí</a>.", isInfoNode: true },
+    infoQueAlerta: { title: "¿Qué es una Alerta Ciudadana?", message: "Es una herramienta para informar al SERNAC conductas de empresas que te afectan a ti y a otros consumidores. <a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>Conoce más sobre la Alerta Ciudadana</a>", isInfoNode: true },
+    infoIngresarAlerta: { title: "¿Cómo ingresar una Alerta?", message: "Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a> con tu ClaveÚnica o Clave SERNAC. Si es tu primera visita, regístrate. Adjunta antecedentes (boleta, fotos, etc.) al ingresar la alerta.<br><br>También puedes ir a nuestras <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-13742.html' target='_blank'>Direcciones Regionales</a>.", isInfoNode: true },
+    infoSaberAlerta: { title: "¿Qué saber al ingresar una Alerta?", message: "Recuerda que la Alerta Ciudadana informa conductas generales, NO resuelve un problema tuyo particular (para eso tienes el Reclamo). <a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>Conoce más sobre la Alerta Ciudadana</a>.", isInfoNode: true },
+    infoAdjuntarAlerta: { title: "¿Puedes adjuntar documentos?", message: "Sí, puedes adjuntar documentos (fotos, etc.) ÚNICAMENTE al momento de ingresar la solicitud. <a href='https://www.sernac.cl/portal/617/w3-article-55680.html' target='_blank'>Conoce más</a>.", isInfoNode: true },
     infoSalir: {
     title: "Me Quiero Salir (MQS)",
     options: [
         {
             text: "¿Qué es Me Quiero Salir?",
-            subtitle: "Descubre qué es esta herramienta para terminar tus contratos.",
+            subtitle: "Descubre qué es herramienta para terminar tus contratos.",
             target: "infoQueEsMQS"
         },
         {
@@ -239,7 +235,7 @@ boletinIndicadores: {
 infoQueEsMQS: {
     title: "¿Qué es Me Quiero Salir?",
     message: `'Me Quiero Salir' (MQS) es una herramienta para solicitar el término de tus contratos de Telecomunicaciones y Seguros Generales. 
-    Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-article-58403.html" target="_blank">MQS</a>.
+    <a href="https://www.sernac.cl/portal/617/w3-article-58403.html" target="_blank">Conoce más sobre MQS</a>.
     Revisa las <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-66083.html" target="_blank">Preguntas Frecuentes</a>.`,
     isInfoNode: true
 },
@@ -257,17 +253,17 @@ infoMQSTelecom: {
 },
 mqsTelecomSolicitar: {
   title: "¿Cómo solicitarlo?",
-  message: "Sigue estos pasos:<br>* Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a> (puedes usar ClaveÚnica o Clave SERNAC).<br>* Selecciona 'Me Quiero Salir' > 'Telecomunicaciones'.<br>* Pincha en 'Ingresar nueva solicitud'.",
+  message: "Sigue estos pasos:<br>• Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a> (puedes usar ClaveÚnica o Clave SERNAC).<br>• Selecciona 'Me Quiero Salir' > 'Telecomunicaciones'.<br>• Pincha en 'Ingresar nueva solicitud'.",
   isInfoNode: true
 },
 mqsTelecomSaber: {
   title: "¿Qué saber al ingresar MQS?",
-  message: "Debes ser el/la titular del contrato y adjuntar una copia de tu Cédula de Identidad (CI). Recibirás respuesta del SERNAC en un plazo máximo de 8 días hábiles. <br>Más info: <a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>aquí</a> | FAQ: <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66083.html' target='_blank'>aquí</a>.",
+  message: "Debes ser el/la titular del contrato y adjuntar una copia de tu Cédula de Identidad (CI). Recibirás respuesta del SERNAC en un plazo máximo de 8 días hábiles. <br><a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más info </a> | <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66083.html' target='_blank'>FAQ</a>.",
   isInfoNode: true
 },
 mqsTelecomEstado: {
   title: "¿Cómo revisar el estado de tu MQS?",
-  message: "Sigue estos pasos:<br>* Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>.<br>* Selecciona 'Me Quiero Salir' > 'Telecomunicaciones'.<br>* Revisa tu caso en la pestaña 'En curso'.",
+  message: "Sigue estos pasos:<br>• Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>.<br>• Selecciona 'Me Quiero Salir' > 'Telecomunicaciones'.<br>• Revisa tu caso en la pestaña 'En curso'.",
   isInfoNode: true
 },
 mqsTelecomSinRespuesta: {
@@ -286,34 +282,34 @@ mqsTelecomAnular: {
   isInfoNode: true
 },
 infoMQSSeguros: {
-  title: "MQS Telecomunicaciones",
+  title: "Ok, sobre MQS para Seguros Generales, ¿qué quieres saber?",
   message: "",
   options: [
-    { text: "¿Cómo solicitarlo?", target: "mqsTelecomSolicitar", subtitle: "Te mostramos los pasos para pedir el término de tu contrato." },
-    { text: "¿Qué saber al ingresar MQS?", target: "mqsTelecomSaber", subtitle: "Conoce los requisitos y plazos para tu solicitud." },
-    { text: "¿Cómo revisar el estado de tu MQS?", target: "mqsTelecomEstado", subtitle: "Verifica el avance de tu solicitud MQS." },
+    { text: "¿Cómo solicitarlo?", target: "mqsTelecomSolicitar", subtitle: "Te mostramos los pasos para pedir el término de tu seguro." },
+    { text: "¿Qué saber al ingresar MQS?", target: "mqsTelecomSaber", subtitle: "Conoce los requisitos y plazos para tu solicitud de seguro." },
+    { text: "¿Cómo revisar el estado?", target: "mqsTelecomEstado", subtitle: "Verifica el avance de tu solicitud de seguro." },
     { text: "¿Qué pasa si la empresa no te responde?", target: "mqsTelecomSinRespuesta", subtitle: "Entérate qué pasa si la empresa no te responde a tiempo." },
-    { text: "¿Qué hacer si la empresa no cumple?", target: "mqsTelecomNoCumple", subtitle: "Conoce los pasos si la empresa no termina tu contrato." },
-    { text: "¿Cómo anular tu solicitud?", target: "mqsTelecomAnular", subtitle: "Descubre cómo cancelar una solicitud que ya hiciste." }
+    { text: "¿Qué hacer si la empresa no cumple?", target: "mqsTelecomNoCumple", subtitle: "Conoce los pasos si la empresa no termina tu contrato de seguro." },
+    { text: "¿Cómo desistir de tu solicitud?", target: "mqsTelecomAnular", subtitle: "Descubre cómo cancelar una solicitud de seguro que ya hiciste." }
   ]
 },
 mqsSeguroSolicitar: {
   title: "¿Cómo solicitarlo?",
   message: `Sigue estos pasos:<br>
-    * Ingresa al Portal del Consumidor (<a href="http://www.sernac.cl/app/consumidor" target="_blank">http://www.sernac.cl/app/consumidor</a>) (puedes usar ClaveÚnica o Clave SERNAC).<br>
-    * Selecciona 'Me Quiero Salir' > 'Seguros'.<br>
-    * Pincha en 'Ingresar nueva solicitud'.`,
+    • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a> (puedes usar ClaveÚnica o Clave SERNAC).<br>
+    • Selecciona 'Me Quiero Salir' > 'Seguros'.<br>
+    • Pincha en 'Ingresar nueva solicitud'.`,
   isInfoNode: true
 },
 mqsSeguroSaber: {
-  title: "¿Qué saber al ingresar MQS?",
+  title: "¿Qué saber antes de ingresar MQS?",
   message: `Debes ser el/la titular o asegurado(a) y adjuntar una copia de tu CI. Recibirás respuesta del SERNAC en un plazo máximo de 8 días hábiles.<br><br>
-    Más info: <a href="https://www.sernac.cl/portal/617/w3-article-58403.html" target="_blank">Aquí</a> | 
-    FAQ: <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-66083.html" target="_blank">Aquí</a>`,
+    <a href="https://www.sernac.cl/portal/617/w3-article-58403.html" target="_blank">Más info </a> | 
+    <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-66083.html" target="_blank">FAQ</a>.`,
   isInfoNode: true
 },
 mqsSeguroEstado: {
-  title: "¿Cómo revisar el estado de tu MQS?",
+  title: "¿Cómo revisar el estado?",
   message: `Sigue estos pasos:<br>
     • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
     • Selecciona 'Me Quiero Salir' > 'Seguros'.<br>
@@ -337,7 +333,6 @@ mqsSeguroAnular: {
 },
     infoNoMolestar: {
     title: "No Molestar",
-    message: "Solicita que dejen de enviarte spam o publicidad no deseada.",
     options: [
         { text: "¿Qué es No Molestar?", subtitle: "Conoce esta herramienta para evitar el spam.", target: "infoQueEsNoMolestar" },
         { text: "¿Cómo ingresar una solicitud?", subtitle: "Te explicamos los pasos para pedir el bloqueo.", target: "infoComoIngresarNoMolestar" },
@@ -351,7 +346,7 @@ mqsSeguroAnular: {
 infoQueEsNoMolestar: {
     title: "¿Qué es No Molestar?",
     message: `Es una herramienta virtual para solicitar que las empresas no te envíen 'spam' o te hagan llamados por promociones o publicidad que no deseas. 
-    Conoce más <a href="https://www.sernac.cl/portal/617/w3-article-9184.html" target="_blank">aquí</a> | 
+    <a href="https://www.sernac.cl/portal/617/w3-article-9184.html" target="_blank">Conoce más </a> | 
     <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-63007.html" target="_blank">FAQ</a>.`,
     isInfoNode: true
 },
@@ -359,19 +354,19 @@ infoQueEsNoMolestar: {
 infoComoIngresarNoMolestar: {
     title: "¿Cómo ingresar una solicitud?",
     message: `Sigue estos pasos:<br>
-    * Ingresa al Portal del Consumidor (<a href="http://www.sernac.cl/app/consumidor" target="_blank">http://www.sernac.cl/app/consumidor</a>).<br>
-    * Selecciona 'No Molestar'.<br>
-    * Pincha en 'Ingresar nuevo teléfono y/o correo electrónico' que deseas bloquear.`,
+    • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+    • Selecciona 'No Molestar'.<br>
+    • Pincha en 'Ingresar nuevo teléfono y/o correo electrónico' que deseas bloquear.`,
     isInfoNode: true
 },
 
 infoSaberAntesNoMolestar: {
     title: "¿Qué saber al ingresar No Molestar?",
     message: `Considera que:<br>
-    * No puedes bloquear empresas de cobranza con esta herramienta (para eso tienes el reclamo por hostigamiento).<br>
-    * Debes ser la persona destinataria del spam que quieres bloquear.<br>
-    * El plazo legal para que la empresa deje de contactarte es de 7 días hábiles máximo desde tu solicitud.<br>
-    Conoce más <a href="https://www.sernac.cl/portal/617/w3-article-9184.html" target="_blank">aquí</a> | 
+    • No puedes bloquear empresas de cobranza con esta herramienta (para eso tienes el reclamo por hostigamiento).<br>
+    • Debes ser la persona destinataria del spam que quieres bloquear.<br>
+    • El plazo legal para que la empresa deje de contactarte es de 7 días hábiles máximo desde tu solicitud.<br>
+    <a href="https://www.sernac.cl/portal/617/w3-article-9184.html" target="_blank">Conoce más</a> | 
     <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-63007.html" target="_blank">FAQ</a>.`,
     isInfoNode: true
 },
@@ -379,32 +374,32 @@ infoSaberAntesNoMolestar: {
 infoEstadoNoMolestar: {
     title: "¿Cómo revisar el estado?",
     message: `Sigue estos pasos:<br>
-    * Ingresa al Portal del Consumidor (<a href="http://www.sernac.cl/app/consumidor" target="_blank">http://www.sernac.cl/app/consumidor</a>).<br>
-    * Selecciona 'No Molestar'.<br>
-    * Elige el número telefónico o el correo electrónico que registraste.<br>
-    * Luego verás el listado de todas las empresas a las que has pedido bloquear y el estado de cada solicitud (si fue acogida o no).`,
+    • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+    • Selecciona 'No Molestar'.<br>
+    • Elige el número telefónico o el correo electrónico que registraste.<br>
+    • Luego verás el listado de todas las empresas a las que has pedido bloquear y el estado de cada solicitud (si fue acogida o no).`,
     isInfoNode: true
 },
 
 infoIncumplimientoNoMolestar: {
     title: "¿Qué hacer si no cumplen?",
     message: `Si una empresa sigue contactándote después del plazo, puedes usar la opción 'Avisar Incumplimiento':<br>
-    * Ingresa al Portal del Consumidor (<a href="http://www.sernac.cl/app/consumidor" target="_blank">http://www.sernac.cl/app/consumidor</a>).<br>
-    * Selecciona 'No Molestar'.<br>
-    * Pincha sobre el número de teléfono o correo que sigue recibiendo la publicidad.<br>
-    * Luego indica la empresa que te sigue contactando.<br>
+    • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+    • Selecciona 'No Molestar'.<br>
+    • Pincha sobre el número de teléfono o correo que sigue recibiendo la publicidad.<br>
+    • Luego indica la empresa que te sigue contactando.<br>
     SERNAC gestionará este aviso y te informará el resultado a tu correo en un plazo de 12 días hábiles. 
-    Más info <a href="https://www.sernac.cl/portal/617/w3-article-58437.html" target="_blank">aquí</a>.`,
+    <a href="https://www.sernac.cl/portal/617/w3-article-58437.html" target="_blank">Más info aquí</a>.`,
     isInfoNode: true
 },
 
 infoEliminarNoMolestar: {
     title: "¿Cómo eliminar una solicitud?",
     message: `Si cambias de opinión y quieres volver a recibir información de una empresa que bloqueaste, sigue estos pasos:<br>
-    * Ingresa al Portal del Consumidor (<a href="http://www.sernac.cl/app/consumidor" target="_blank">http://www.sernac.cl/app/consumidor</a>).<br>
-    * Selecciona 'No Molestar'.<br>
-    * En el estado de tu solicitud, selecciona la(s) empresa(s) a las que has pedido el cese.<br>
-    * En la parte superior derecha encontrarás un botón rojo que dice 'Eliminar solicitud'.`,
+    • Ingresa al <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
+    • Selecciona 'No Molestar'.<br>
+    • En el estado de tu solicitud, selecciona la(s) empresa(s) a las que has pedido el cese.<br>
+    • En la parte superior derecha encontrarás un botón rojo que dice 'Eliminar solicitud'.`,
     isInfoNode: true
 }
 ,
@@ -412,17 +407,17 @@ infoEliminarNoMolestar: {
         title: "Conoce tus Derechos",
         message: "",
         options: [
-            { text: "Garantía Legal y Devoluciones", target: "infoGarantia", subtitle: "Tu derecho a cambio, reparación o devolución." },
-            { text: "Compras por Internet", target: "infoCompras", subtitle: "Tus derechos ante retrasos o fraudes online." },
-            { text: "Servicios Financieros", target: "infoFinancieros", subtitle: "Créditos, tarjetas, portabilidad y derechos." },
-            { text: "Telecomunicaciones", target: "infoTelecom", subtitle: "Derechos ante interrupciones o contratos." },
-            { text: "Cobranzas", target: "infoCobranzas", subtitle: "Hostigamiento y gastos permitidos." },
-            { text: "Ciberseguridad y Fraudes", target: "infoCiber", subtitle: "Prevención y qué hacer si eres víctima." },
-            { text: "Derechos en Viajes", target: "infoViajes", subtitle: "Vuelos, equipaje, agencias y más." }
+            { text: "Garantía Legal y Devoluciones", target: "infoGarantia", subtitle: "Conoce tu derecho a garantía (6x3), retracto y más." },
+            { text: "Compras por Internet", target: "infoCompras", subtitle: "Conoce tus derechos ante retrasos, falta de stock o fraudes online." },
+            { text: "Servicios Financieros", target: "infoFinancieros", subtitle: "Infórmate sobre créditos, tarjetas, portabilidad y tus derechos financieros." },
+            { text: "Telecomunicaciones", target: "infoTelecom", subtitle: "Conoce tus derechos ante interrupciones o al terminar tu contrato." },
+            { text: "Cobranzas", target: "infoCobranzas", subtitle: "Infórmate sobre hostigamiento y gastos de cobranza permitidos." },
+            { text: "Ciberseguridad y Fraudes", target: "infoCiber", subtitle: "Aprende a prevenir fraudes y qué hacer si eres víctima." },
+            { text: "Derechos en Viajes", target: "infoViajes", subtitle: "Conoce tus derechos al viajar: vuelos, equipaje, agencias." }
         ]
     },
     infoGarantia: {
-    title: "Garantía Legal y Devoluciones",
+    title: "Derechos en Garantía Legal y Devoluciones",
     options: [
         { text: "¿Qué es la Garantía Legal (6x3)?", subtitle: "Conoce tu derecho a cambio, reparación o devolución.", target: "garantiaQueEs" },
         { text: "¿Qué hacer si un producto nuevo falla?", subtitle: "Conoce las 3 opciones que tienes para exigir.", target: "garantiaProductoFalla" },
@@ -465,22 +460,22 @@ infoEliminarNoMolestar: {
         isInfoNode: true
     },
     garantiaProductoUsado: {
-        title: "¿Aplica la garantía en productos usados?",
-        message: `Los productos usados o de segunda mano <strong>NO</strong> tienen Garantía Legal 6x3, <strong>SIEMPRE que te lo adviertan ANTES de la compra</strong>.<br>
+        title: "¿La Garantía aplica en productos usados?",
+        message: `Los productos usados o de segunda mano NO tienen Garantía Legal 6x3, SIEMPRE que te lo adviertan ANTES de la compra.<br>
         Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
         isInfoNode: true
     },
     garantiaLiquidacion: {
   title: "¿La Garantía aplica en liquidaciones?",
-  message: `Sí, <strong>no por comprar más barato tienes menos derechos</strong>.<br>
+  message: `Sí, no por comprar más barato tienes menos derechos.<br>
   Conoce más sobre la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
   isInfoNode: true
 },
 
 garantiaRevisionTecnica: {
   title: "¿Y si una empresa te obliga a hacer una revisión técnica?",
-  message: `Las empresas <strong>no pueden poner barreras</strong> como condicionar la garantía a la revisión/definición de un servicio técnico.<br>
-  Si ocurre, <a href="http://www.sernac.cl/app/consumidor" target="_blank">haz un Reclamo en el Portal del Consumidor</a>.<br>
+  message: `Las empresas no pueden poner barreras como condicionar la garantía a la revisión/definición de un servicio técnico.<br>
+  Si ocurre, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>
   Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
   isInfoNode: true
 },
@@ -488,44 +483,44 @@ garantiaRevisionTecnica: {
 garantiaExcepciones: {
   title: "¿Qué productos no tienen garantía ni cambio?",
   message: `No tienen garantía legal los productos que compraste en el comercio informal (sin boleta o factura).<br>
-  Tampoco los de segunda selección, usados o refaccionados, <strong>siempre y cuando te lo hayan advertido claramente antes de la compra</strong>.<br>
+  Tampoco los de segunda selección, usados o refaccionados, siempre y cuando te lo hayan advertido claramente antes de la compra.<br>
   Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
   isInfoNode: true
 },
 
 retractoDistancia: {
   title: "¿Puedes arrepentirte de una compra?",
-  message: `Si compras por internet (o a distancia) tienes <strong>10 días</strong> desde la compra o recepción para <strong>devolver el producto sin uso y con su embalaje en buen estado</strong>.<br>
+  message: `Si compras por internet (o a distancia) tienes 10 días desde la compra o recepción para devolver el producto sin uso y con su embalaje en buen estado.<br>
   Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
   isInfoNode: true
 },
 
 retractoPresencial: {
   title: "¿Puedes arrepentirte en compras presenciales?",
-  message: `Si compraste presencialmente pero <strong>no tuviste acceso directo al producto</strong> (por ejemplo, por catálogo), el derecho a retracto también aplica, salvo que la empresa informe su exclusión.<br>
+  message: `Si compraste presencialmente pero no tuviste acceso directo al producto (por ejemplo, por catálogo), el derecho a retracto también aplica, salvo que la empresa informe su exclusión.<br>
   Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
   isInfoNode: true
 },
 
 retractoEjercer: {
   title: "¿Cómo ejercer tu derecho a Retracto?",
-  message: `Informa a la empresa que anulas la compra dentro de <strong>10 días</strong> (desde compra o recepción).<br>
-  El plazo se <strong>amplía a 90 días</strong> si no enviaron confirmación escrita del contrato.<br>
+  message: `Informa a la empresa que anulas la compra dentro de 10 días (desde compra o recepción).<br>
+  El plazo se amplía a 90 días si no enviaron confirmación escrita del contrato.<br>
   Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
   isInfoNode: true
 },
 
 garantiaVsCambio: {
   title: "¿Garantía Legal vs Ticket de Cambio?",
-  message: `La <strong>Garantía Legal</strong> es un derecho por ley cuando un producto nuevo falla.<br>
-  En cambio el <strong>Ticket de Cambio</strong> es una oferta voluntaria de la empresa para que puedas cambiar por gusto o talla dentro de un plazo definido.<br>
+  message: `La Garantía Legal es un derecho por ley cuando un producto nuevo falla.<br>
+  En cambio el Ticket de Cambio es una oferta voluntaria de la empresa para que puedas cambiar por gusto o talla dentro de un plazo definido.<br>
   Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal 6x3</a>.`,
   isInfoNode: true
 },
 
 garantiaEmbalaje: {
   title: "¿Te pueden exigir el embalaje original?",
-  message: `No, para ejercer la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal</a>, las empresas <strong>no pueden exigir embalaje original</strong> si el producto nuevo falla, ni tampoco cobrar si no lo tienes.`,
+  message: `No, para ejercer la <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-8062.html" target="_blank">Garantía Legal</a>, las empresas no pueden exigir embalaje original si el producto nuevo falla, ni tampoco cobrar si no lo tienes.`,
   isInfoNode: true
 },
 
@@ -535,7 +530,7 @@ garantiaEmbalaje: {
     infoCompras: { title: "Compras por Internet", message: "Conoce tus derechos ante retrasos, falta de stock o fraudes online...", isInfoNode: true },
 
   infoCompras: {
-    title: "Compras por Internet",
+    title: "Derechos en Compras por Internet",
     options: [
       {
         text: "¿Qué hacer si el producto no llega a tiempo?",
@@ -570,32 +565,32 @@ garantiaEmbalaje: {
     ]
   },
   noLlegaTiempo: {
-    title: "¿Qué hacer si el producto no llega a tiempo?",
-    message: `La empresa debe indicar una fecha clara de retiro o un rango preciso para el despacho (indicando si son días hábiles o corridos). Si no cumple con ese plazo, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo en el Portal</a>.
+    title: "¿Qué hacer si tu producto no llega a tiempo?",
+    message: `La empresa debe indicar una fecha clara de retiro o un rango preciso para el despacho (indicando si son días hábiles o corridos). Si no cumple con ese plazo, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.
 Revisa tus <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Derechos en Comercio Electrónico</a>.`,
     isInfoNode: true
   },
   productoSinStock: {
     title: "¿Qué hacer si te venden un producto sin stock?",
-    message: `Las empresas están obligadas a informarte sobre la falta de stock ANTES de que realices la compra. Si compraste algo y luego te dicen que no hay stock, están incumpliendo. En ese caso, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo en el Portal</a>.
-Revisa tus Derechos en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Comercio Electrónico</a>.`,
+    message: `Las empresas están obligadas a informarte sobre la falta de stock ANTES de que realices la compra. Si compraste algo y luego te dicen que no hay stock, están incumpliendo. En ese caso, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.
+Revisa tus <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Derechos en Comercio Electrónico</a>.`,
     isInfoNode: true
   },
   AlgoDistinto: {
     title: "¿Qué hacer si recibes algo distinto?",
-    message: `Las empresas deben respetar todo lo que te ofrecieron en su publicidad y las características informadas del producto o servicio (precio, formas de pago, costo de envío, etc.). Si recibes algo distinto a lo prometido, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo en el Portal</a>.
-Revisa tus Derechos en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Comercio Electrónico</a>.`,
+    message: `Las empresas deben respetar todo lo que te ofrecieron en su publicidad y las características informadas del producto o servicio (precio, formas de pago, costo de envío, etc.). Si recibes algo distinto a lo prometido, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.
+Revisa tus <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Derechos en Comercio Electrónico</a>.`,
     isInfoNode: true
   },
   RetractoCompras: {
-    title: "¿Puedes arrepentirte? (Retracto)",
+    title: "¿Puedes arrepentirte de una compra?",
     message: `Si compras por internet (o a distancia) tienes 10 días desde la compra/recepción para devolver el producto sin uso y embalaje en buen estado. Conoce más sobre <a href="https://www.sernac.cl/portal/617/w3-propertyvalue-64530.html" target="_blank">Derecho a Retracto</a>.`,
     isInfoNode: true
   },
   ComprasEmpresaNoContesta: {
     title: "¿Qué hacer si la empresa no te contesta?",
-    message: `La empresa debe informar formas de contacto claras (teléfono, correo, etc.) y responder tus consultas o reclamos dentro de un plazo razonable. Si tienes problemas para contactarlos o no te responden, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo en el Portal</a>.
-Revisa tus Derechos en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Comercio Electrónico</a>.`,
+    message: `La empresa debe informar formas de contacto claras (teléfono, correo, etc.) y responder tus consultas o reclamos dentro de un plazo razonable. Si tienes problemas para contactarlos o no te responden, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.
+Revisa tus <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-20982.html" target="_blank">Derechos en Comercio Electrónico</a>.`,
     isInfoNode: true
   },
   ComprasInternetFraudes: {
@@ -607,7 +602,7 @@ Infórmate más sobre cómo comprar seguro en <a href="https://www.sernac.cl/por
   },
 
     infoFinancieros: {
-  title: "Servicios Financieros",
+  title: "Derechos en Servicios Financieros",
   options: [
     { text: "¿Cuáles son tus derechos financieros?", subtitle: "En bancos, casas comerciales, entre otras.", target: "InfoComprasDerFin" },
     { text: "¿No te dejan cerrar un producto?", subtitle: "Tu derecho a terminar productos financieros.", target: "cerrarProducto" },
@@ -617,7 +612,7 @@ Infórmate más sobre cómo comprar seguro en <a href="https://www.sernac.cl/por
     { text: "¿Te pueden cambiar un contrato?", subtitle: "Modificaciones unilaterales.", target: "cambioContrato" },
     { text: "¿Te pueden enviar productos no solicitados?", subtitle: "Conoce esta práctica prohibida.", target: "productosNoSolicitados" },
     { text: "¿Te pueden limitar los medios de pago?", subtitle: "Tu libertad para elegir dónde pagar (PAC/PAT).", target: "limiteMediosPago" },
-    { text: "¿Qué hacer ante un cobro irregular?", subtitle: "Acciones frente a cobros indebidos.", target: "cobroIrregular" },
+    { text: "¿Qué hacer ante un cobro irregular?", subtitle: "Qué hacer ante cargos que no reconoces.", target: "cobroIrregular" },
     { text: "¿Qué es la Portabilidad Financiera?", subtitle: "Cámbiate de banco o institución financiera más fácil.", target: "portabilidadFinanciera" },
     { text: "¿Te cobran por cambiar la tarjeta?", subtitle: "Costos por reposición del plástico de tu tarjeta.", target: "cambioTarjeta" },
     { text: "¿Cómo prevenir fraudes financieros?", subtitle: "Aprende a prevenir fraudes financieros.", target: "fraudesFinancieros" }
@@ -626,37 +621,42 @@ Infórmate más sobre cómo comprar seguro en <a href="https://www.sernac.cl/por
 
 InfoComprasDerFin: {
   title: "¿Cuáles son tus derechos financieros?",
-  message: `* Cerrar productos en 5 días.<br>* Recibir Hoja Resumen.<br>* Conocer todos los costos.<br><br>Infórmate más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `• Cerrar productos en 5 días.<br>• Recibir Hoja Resumen.<br>• Conocer todos los costos.<br><br>Infórmate más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 cerrarProducto: {
   title: "¿No te dejan cerrar un producto?",
-  message: `Tienes derecho a cerrar cualquier producto financiero en 5 días (si pagaste lo adeudado). Si no cumplen, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo en el Portal del Consumidor</a>.<br>Conoce más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `Tienes derecho a cerrar cualquier producto financiero en 5 días (si pagaste lo adeudado). Si no cumplen, haz un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Conoce más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 derechosCredito: {
   title: "Derechos al contratar un crédito",
-  message: `* Información sobre contratos de adhesión, CTC y CAE.<br>* No pueden obligarte a contratar productos ni cambiar condiciones.<br>* Libertad para usar pagos electrónicos de otros bancos.<br><br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `• Empresas deben informar sobre contratos de adhesión, CTC y CAE.<br>
+  • No te pueden obligar a contratar productos ni a cambios de condiciones.<br>
+  • No te pueden limitar el uso de pagos electrónicos de otros bancos.<br>
+  Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 vigenciaCotizacion: {
   title: "Vigencia de una cotización",
-  message: `La cotización de una institución financiera debe durar al menos 7 días hábiles. <br>Más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `La cotización de una institución financiera debe durar al menos 7 días hábiles, para que tengas tiempo
+  de compararla con otras opciones.<br><a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
 ventasAtadas: {
   title: "¿Cuáles son las ventas atadas?",
-  message: `No pueden obligarte a contratar productos/servicios no solicitados, como seguros automotrices junto con tarjetas. <br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `Las instituciones financieras no pueden 'amarrarte' con productos/servicios no solicitados (ej. obligarte a contratar seguros automotriz al pedir tarjeta).
+  Tienes la libertad de acptarlos o no.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 cambioContrato: {
   title: "¿Te pueden cambiar un contrato?",
-  message: `No pueden modificar condiciones o costos sin tu consentimiento expreso. Si ocurre, haz un <a href="http://www.sernac.cl/app/consumidor" target="_blank">Reclamo</a>.<br>Infórmate en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `No pueden cambiar las condiciones o los costos sin tu expreso consentimiento (por ejemplo, no te pueden subir las comisiones de tu tarjeta unilateralmente). Si te pasa esto, haz un Reclamo en el<a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Conoce más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
@@ -668,36 +668,48 @@ productosNoSolicitados: {
 
 limiteMediosPago: {
   title: "¿Te pueden limitar los medios de pago?",
-  message: `Puedes elegir libremente el banco para PAC/PAT. Si no te lo permiten, reclama en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.<br>Infórmate en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `Puedes elegir libremente la entidad con la que quieres tener tu convevio de pago automático de cuentas (PAC)
+  o de tarjeta de crédito (PAT). La empresa no puede obligarte a usar sólo el banco asociado al producto. 
+  Si no te lo permiten, has un Reclamo en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.
+  <br>Más información en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
   isInfoNode: true
 },
 
 cobroIrregular: {
   title: "¿Qué hacer ante un cobro irregular?",
-  message: `Contacta a la empresa para desconocer el cargo. Si no responde, reclama en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal</a>.<br>Más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html" target="_blank">Ciberseguridad en Consumo</a>.`,
+  message: `Ante cobros o cargos irregulares en tus cuentas, contacta inmediatamente a la empresa para desconocer la operación y prevenir fraudes. Las entidades financieras te deben restituir el dinero o anular cargos no autorizados. Si la empresa no responde, reclama en el <a href="http://www.sernac.cl/app/consumidor" target="_blank">Portal del Consumidor</a>.<br>Revisa más en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html" target="_blank">Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 },
 
 portabilidadFinanciera: {
   title: "¿Qué es la Portabilidad Financiera?",
-  message: `Facilita el cambio de productos como cuentas, créditos y tarjetas a otra institución. Proceso estandarizado y más simple.<br><a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Conoce más</a>.`,
+  message: `La portabilidad financiera te permite cambiarte fácilmente de una institución financiera a otra, buscando mejores condiciones para tus productos como:<br>
+  • Cuentas corrientes<br>
+  • Tarjetas de crédito<br>
+  • Créditos hipotecarios<br>
+  • Créditos de consumo o automotrices<br>
+  Es un proceso estandarizado y más simple.<br>
+  <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
 cambioTarjeta: {
   title: "¿Te cobran por cambiar la tarjeta?",
-  message: `No pueden cobrarte por cambiar o reponer el plástico de tu tarjeta. Más info en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Consumidor Financiero</a>.`,
+  message: `No, las entidades financieras no pueden cobrarte por el cambio o la reposición del plástico (material) de tu tarjeta de crédito o débito. Tampoco pueden exigirte firmar un nuevo contrato con condiciones diferentes solo por este cambio.<br>
+  <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66843.html" target="_blank">Más info</a>.`,
   isInfoNode: true
 },
 
 fraudesFinancieros: {
   title: "¿Cómo prevenir fraudes financieros?",
-  message: `Evita ofertas muy buenas para ser verdad o empresas desconocidas que piden pagos adelantados.<br>Denuncia ante el <a href="http://www.ministeriopublico.cl/" target="_blank">Ministerio Público</a>.<br>Consejos en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html" target="_blank">Ciberseguridad en Consumo</a>.`,
+  message: `Mantente alerta ante ofertas de créditos demasiado buenas para ser verdad, empresas desconocidas o que te pidan dinero por adelantado para gestionar un préstamo.<br>
+  Podrían ser fraudes. Si eres víctima, denuncia ante el <a href="http://www.ministeriopublico.cl/" target="_blank">Ministerio Público</a>.<br>
+  Revisa nuestros consejos en <a href="https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html" target="_blank">Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 }
 ,
     infoTelecom: {
-  title: "Telecomunicaciones",
+  title: "Derechos en Telecomunicaciones",
   options: [
     { text: "Derechos en Telecomunicaciones", subtitle: "Conoce los principales.", target: "telecoDerechos" },
     { text: "¿Qué hacer si tu servicio se interrumpe?", subtitle: "Descuentos y compensaciones a los que tienes derecho.", target: "telecoInterrupcion" },
@@ -708,31 +720,35 @@ fraudesFinancieros: {
     { text: "¿En cuánto tiempo deben terminar tu contrato?", subtitle: "Plazo legal para que hagan efectivo el cierre.", target: "telecoPlazo" },
     { text: "¿Puedes mantener tu número?", subtitle: "Infórmate sobre la portabilidad numérica al cambiarte.", target: "telecoNumero" },
     { text: "¿Puedes terminar tu contrato si tienes deudas?", subtitle: "Cómo se cobran los saldos pendientes al terminar.", target: "telecoDeudas" },
-    { text: "¿Puedes terminar si pagaste por adelantado?", subtitle: "Saber si puedes terminar si ya pagaste.", target: "telecoAdelantado" }
+    { text: "¿Puedes terminar si pagaste por adelantado?", subtitle: "Devolución de saldos a tu favor.", target: "telecoAdelantado" }
   ]
 },
 
 telecoDerechos: {
-  title: "Derechos en Telecomunicaciones",
-  message: `Tienes derecho a terminar tu contrato de telecomunicaciones (internet, teléfono, TV) en cualquier momento y sin causa. No pueden negarse ni imponerte requisitos o multas por ello. Cualquier condición que te pongan para dificultarlo es una infracción.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Conoce más</a>.`,
+  title: "Principales Derechos en Telecomunicaciones",
+  message: `Tienes derecho a terminar tu contrato de telecomunicaciones (internet, teléfono, TV) en cualquier momento y sin causa. No pueden negarse ni imponerte requisitos o multas por ello. Cualquier condición que te pongan para dificultarlo es una infracción.<br>Conoce más en<a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
   isInfoNode: true
 },
 
 telecoInterrupcion: {
   title: "¿Qué hacer si tu servicio se interrumpe?",
-  message: `Tienes derecho a descuentos en tu boleta e incluso indemnizaciones si te suspenden, alteran o interrumpen el servicio contratado por causas imputables a la empresa. <br><a href='http://www.sernac.cl/app/consumidor' target='_blank'>Reclama aquí</a>. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
+  message: `Tienes derecho a descuentos en tu boleta e incluso indemnizaciones si te suspenden, alteran o interrumpen el servicio contratado (teléfono, internet, TV pagada) por causas imputables a la empresa. <br>
+  Si vulneran tus derechos, ingresa un Reclamo en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal</a>. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
   isInfoNode: true
 },
 
 telecoServiciosExtra: {
   title: "¿Te obligan a contratar servicios extra?",
-  message: `Ninguna empresa de telecomunicaciones puede obligarte a contratar servicios adicionales que no deseas. <br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Infórmate más</a>.`,
+  message: `Ninguna empresa de telecomunicaciones puede obligarte a contratar servicios adicionales que no deseas o necesitas junto con el plan principal. <br>
+  Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
   isInfoNode: true
 },
 
 telecoTerminar: {
   title: "¿Cuándo puedes terminar tu contrato?",
-  message: `Puedes terminarlo en cualquier momento sin necesidad de dar una causa. Deben cerrarlo en un máximo de 1 día hábil desde tu solicitud.<br>Usa la herramienta <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Me Quiero Salir</a>.`,
+  message: `En cualquier momento sin necesidad de expresar una causa. La empresa debe cerrar el contrato en 1 día hábil máximo desde tu solicitud.
+  Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.<br>
+  Te recomendamos también usar la herramienta <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Me Quiero Salir</a> en el Portal del Consumidor.`,
   isInfoNode: true
 },
 
@@ -744,36 +760,37 @@ telecoRequisitos: {
 
 telecoTitular: {
   title: "¿Qué requisitos debes cumplir para terminar?",
-  message: `Solo necesitas ser titular del contrato. No tienes que explicar tus motivos. <br><a href='http://www.sernac.cl/app/consumidor' target='_blank'>Usa Me Quiero Salir</a>.`,
+  message: `El único requisito es que seas la persona titular del contrato que quieres terminar. No debes explicar los motivos de tu decisión. Usa <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Me Quiero Salir</a> en el Portal. <a href='http://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más sobre MQS</a>.`,
   isInfoNode: true
 },
 
 telecoPlazo: {
   title: "¿En cuánto tiempo deben terminar tu contrato?",
-  message: `La empresa debe cerrarlo y dejar de cobrarte en máximo 1 día hábil desde tu solicitud. <br><a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más info</a>.`,
+  message: `Las empresas deben terminar tu contrato y dejar de facturarte en un plazo máximo de 1 día hábil desde que realizaste el requerimiento. Usa <a href='https://www.sernac.cl/app/consumidor/' target='_blank'>Me Quiero Salir</a>
+  en el Portal. <a href='https://www.sernac.cl/portal/617/w3-article-58403.html' target='_blank'>Más sobre MQS</a>.`,
   isInfoNode: true
 },
 
 telecoNumero: {
   title: "¿Puedes mantener tu número?",
-  message: `Sí. Puedes portar tu número hasta 2 años después de terminar el contrato (180 días si tienes deuda). <br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más información</a>.`,
+  message: `Sí, gracias a la portabilidad numérica. Si eres postpago (tenías un plan), puedes recuperar tu número portándolo a otra compañía hasta 2 años después de terminar el contrato. Si tienes deuda con la antigua compañía, el plazo para portarte manteniendo el número es de 180 días. Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
   isInfoNode: true
 },
 
 telecoDeudas: {
   title: "¿Puedes terminar tu contrato si tienes deudas?",
-  message: `Sí. La empresa debe cerrar el contrato aunque tengas deudas. Luego emitirá la facturación final. <br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más detalles</a>.`,
+  message: `Sí, la empresa debe terminar tu contrato aunque tengas deudas pendientes. Luego te emitirá la facturación final con los cobros adeudados y coordinará contigo la devolución de equipos si corresponde. Conoce más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Derechos en Telecomunicaciones</a>.`,
   isInfoNode: true
 },
 
 telecoAdelantado: {
   title: "¿Puedes terminar si pagaste por adelantado?",
-  message: `Sí. Si tienes saldo a favor, deben calcularlo y devolvértelo. <br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
+  message: `Sí. Si pagaste tu plan de forma anticipada y quedan saldos a tu favor al momento de terminar el contrato, la empresa deberá calcularlos y restituirte ese dinero. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-14521.html' target='_blank'>Más info</a>.`,
   isInfoNode: true
 }
 ,
     infoCobranzas: {
-  title: "Cobranzas",
+  title: "Derechos en Cobranzas",
   options: [
     { text: "¿Qué es la cobranza extrajudicial?", subtitle: "Entiende qué es la cobranza extrajudicial.", target: "cobranzaExtrajudicial" },
     { text: "¿Pierdes tus derechos si tienes deudas?", subtitle: "Tus derechos como deudor/a deben respetarse.", target: "cobranzaDerechosDeudor" },
@@ -783,65 +800,80 @@ telecoAdelantado: {
     { text: "¿Cómo reclamar por hostigamiento?", subtitle: "Pasos para ingresar tu reclamo si te hostigan.", target: "cobranzaReclamar" },
     { text: "¿Cuándo usar el reclamo 'No me hostiguen'?", subtitle: "Casos específicos en los que aplica este reclamo.", target: "cobranzaCuandoReclamar" },
     { text: "¿Qué hacer si te siguen hostigando?", subtitle: "Qué hacer si la empresa incumple tras tu reclamo.", target: "cobranzaIncumplimiento" },
-    { text: "¿Cómo renegociar tu deuda?", subtitle: "Alternativas gratuitas para ordenar tus deudas.", target: "cobranzaRenegociar" }
+    { text: "¿Cómo renegociar tu deuda?", subtitle: "Alternativas gratuitas para ordenar tus deudas en la SUPERIR.", target: "cobranzaRenegociar" }
   ]
 },
 
 cobranzaExtrajudicial: {
   title: "¿Qué es la cobranza extrajudicial?",
-  message: `Es el procedimiento que usan las empresas o agencias externas para informarte sobre una mora o retraso en tus pagos, antes de iniciar acciones judiciales.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Conoce más</a>.`,
+  message: `Es el procedimiento que usan las empresas o agencias externas para informarte sobre una mora o retraso en tus pagos, antes de iniciar acciones judiciales.<br>Conoce más en<a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Cobranzas Extrajudiciales</a>.`,
   isInfoNode: true
 },
 
 cobranzaDerechosDeudor: {
   title: "¿Pierdes tus derechos si tienes deudas?",
-  message: `No. Aunque tengas deudas, tus derechos siguen vigentes y deben respetarse.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Revisa tus derechos</a>.`,
+  message: `No. Aunque tengas deudas y caigas en mora, sigues teniendo derechos que las empresas deben respetar al momento de cobrarte. Conoce tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Derechos en Cobranzas Extrajudiciales</a>.`,
   isInfoNode: true
 },
 
 cobranzaDesdeCuando: {
   title: "¿Desde cuándo pueden cobrarte?",
-  message: `Solo pueden iniciar cobranzas extrajudiciales después de 20 días corridos desde que tu deuda cayó en mora.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Infórmate aquí</a>.`,
+  message: `Las acciones de cobranza extrajudicial (llamados, cartas, etc.) solo pueden empezar a realizarse después de 20 días corridos desde que tu deuda venció y cayó en mora. Conoce tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Derechos en Cobranzas Extrajudiciales</a>.`,
   isInfoNode: true
 },
 
 cobranzaGastos: {
   title: "¿Quién paga los gastos de cobranza?",
-  message: `Tú los pagas, pero tienen topes máximos por ley. Verifica en la <a href='https://www.sernac.cl/app/calculadora_financiera' target='_blank'>Calculadora de Cobranza</a>.<br><a href='https://youtu.be/t_AsPJxLKo0' target='_blank'>Ver video explicativo</a>.`,
+  message: `Los gastos de la cobranza extrajudicial los pagas tú (la persona con la deuda), pero ¡ojo!, estos gastos tienen topes máximos definidos por ley según el monto de tu deuda. Usa la <a href='https://www.sernac.cl/app/calculadora_financiera' target='_blank'>Calculadora de Gastos de Cobranza</a> para verificar que no te cobren de más.<br> Video: <a href='https://youtu.be/t_AsPJxLKo0' target='_blank'>Cómo funciona</a>.`,
   isInfoNode: true
 },
 
 cobranzaHostigamiento: {
   title: "¿Te pueden acosar u hostigar?",
-  message: `No. Sólo se permite 1 llamada o visita semanal y 2 gestiones remotas con 2 días entre ellas.<br><a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Más sobre No Me Hostiguen</a>.`,
+  message: `No. La ley limita claramente las acciones de cobranza: solo se permite 1 visita o llamada telefónica a la semana. Adicionalmente, pueden realizar hasta 2 gestiones remotas semanales (como emails, SMS, mensajes de WhatsApp o por apps), siempre que haya al menos dos días de diferencia entre ellas. Si te hostigan con más contactos que esos, ingresa un Reclamo con la opción 'No me hostiguen cobranzas'. <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Más sobre 'No Me Hostiguen'</a>.`,
   isInfoNode: true
 },
 
 cobranzaReclamar: {
   title: "¿Cómo reclamar por hostigamiento?",
-  message: `Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>, elige 'Reclamo' y luego 'No me hostiguen cobranzas'.<br><a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Ver instructivo</a>.`,
+  message: `Sigue estos pasos:
+  • Ingresa al <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a> (puedes usar ClaveÚnica o Clave SERNAC).<br>
+  • Selecciona la opción 'Reclamo' y luego 'No me hostiguen cobranzas'.<br>
+  • Acepta las condiciones, completa la información solicitada y presiona 'Enviar'.<br>
+
+  <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Más sobre 'No Me Hostiguen'</a>.`,
   isInfoNode: true
 },
 
 cobranzaCuandoReclamar: {
   title: "¿Cuándo usar el reclamo 'No me hostiguen'?",
-  message: `Si te llaman más de lo permitido, te cobran deudas ajenas, ya pagadas, judicializadas o en renegociación.<br><a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Casos aplicables</a>.`,
+  message: `Usa el reclamo especial 'No me hostiguen cobranzas' si:<br>
+  • Te llaman o contactan más veces de lo permitido por la ley para cobrarte una deuda.<br>
+  • Te cobran una deuda que ya pagaste.<br>
+  • Te cobran una deuda que pertenece a otra persona o que tú desconoces.<br>
+  • Te cobran una deuda que ya tiene una demanda judicial notificada.<br>
+  • Te cobran una deuda que está en proceso de renegociación o liquidación en la Superintendencia de Insolvencia y Reemprendimiento (SUPERIR).<br>
+  <a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Más info</a>.`,
   isInfoNode: true
 },
 
 cobranzaIncumplimiento: {
   title: "¿Qué hacer si te siguen hostigando?",
-  message: `Puedes avisar incumplimiento desde 'Estado de tus casos' o ingresar un nuevo reclamo con nuevas pruebas.<br><a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>.`,
+  message: `Sigue estos pasos según el caso:<br>
+   • Si la empresa acogió tu reclamo 'No me hostiguen' pero luego vuelve a incumplir: puedes 'Avisar Incumplimiento' en la sección 'Estado de tus casos' del <a href='https://www.sernac.cl/app/consumidor/' target='_blank'>Portal</a>.<br>
+   • Si la empresa no acogió tu reclamo y tienes nuevas pruebas del hostigamiento: ingresa un nuevo Reclamo adjuntando esos antecedentes.<br>
+<a href='https://www.sernac.cl/portal/617/w3-propertyvalue-66804.html' target='_blank'>Más info</a>.`,
   isInfoNode: true
 },
 
 cobranzaRenegociar: {
   title: "¿Cómo renegociar tu deuda?",
-  message: `Puedes renegociar o liquidar tus deudas con la Superintendencia de Insolvencia (SUPERIR).<br><a href='https://www.superir.gob.cl/' target='_blank'>Ir a SUPERIR</a>. <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Más información</a>.`,
+  message: `Puedes buscar una solución a tu sobreendeudamiento a través de los procedimientos gratuitos de Renegociación o Liquidación Voluntaria de Deudas que ofrece la <a href='https://www.superir.gob.cl/' target='_blank'>Superintendencia de Insolvencia y Reemprendimiento (SUPERIR)</a>. Estos mecanismos te permiten pagar tus deudas en nuevas condiciones, de acuerdo a tu capacidad económica actual.
+<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Más info sobre cobranzas</a>.`,
   isInfoNode: true
 },
     infoCiber: {
-  title: "Ciberseguridad y Fraudes",
+  title: "Derechos en Ciberseguridad y Fraudes",
   options: [
     { text: "¿Cómo prevenir fraudes online?", subtitle: "Consejos para comprar online de forma segura.", target: "prevencionFraudesOnline" },
     { text: "¿Cómo prevenir fraudes financieros?", subtitle: "Recomendaciones generales para evitar fraudes.", target: "prevencionFraudesFinancieros" },
@@ -852,25 +884,28 @@ cobranzaRenegociar: {
 
 prevencionFraudesOnline: {
   title: "¿Cómo prevenir fraudes online?",
-  message: `¡Cuidado con las estafas! Pueden existir empresas falsas que te engañan con ofertas muy convenientes, no entregan los productos o simplemente desaparecen tras el pago.<br>Denuncia en el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>.<br>Más info en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
+  message: `¡Cuidado con las estafas! Pueden existir empresas falsas que te engañan con ofertas muy convenientes, no entregan los productos o simplemente desaparecen tras el pago. Si te pasa algo así, haz una denuncia ante el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>, ya que podría ser un delito.<br>Infórmate más sobre cómo comprar seguro en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 },
 
 prevencionFraudesFinancieros: {
   title: "¿Cómo prevenir fraudes financieros?",
-  message: `Mantente alerta ante ofertas demasiado buenas, empresas desconocidas o solicitudes de pagos por adelantado.<br>Denuncia en el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Recomendaciones aquí</a>.`,
+  message: `Mantente alerta ante ofertas de créditos demasiado buenas para ser verdad, empresas desconocidas o que te pidan dinero por adelantado para gestionar un préstamo. Podrían ser fraudes. Si eres víctima, denuncia ante el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>.<br>
+  Revisa nuestros consejos en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 },
 
 cobroIrregularFraudes: {
   title: "¿Qué hacer ante un cobro irregular?",
-  message: `Si ves un cargo no reconocido, contacta a la empresa para desconocer la operación. Si no responden, reclama en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>.<br>Más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
+  message: `Ante cobros o cargos irregulares en tus cuentas, contacta inmediatamente a la empresa para desconocer la operación y prevenir fraudes. Las entidades financieras te deben restituir el dinero o anular los cargos no autorizados. Si la empresa no responde, reclama en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a>.
+  <br>Revisa más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 },
 
 victimaFraude: {
   title: "¿Qué hacer si fuiste víctima de fraude?",
-  message: `Si una empresa te estafó, suplantó identidad o desapareció tras el pago, denuncia en el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Infórmate más aquí</a>.`,
+  message: `Si fuiste víctima de una empresa fraudulenta (por ejemplo, una que desapareció con tu dinero, no te entregó el producto, suplantó la identidad de otra, etc.), te recomendamos hacer inmediatamente una denuncia ante el <a href='http://www.ministeriopublico.cl/' target='_blank'>Ministerio Público</a>, ya que estos actos suelen ser delitos.<br>
+  Revisa nuestros consejos en<a href='https://www.sernac.cl/portal/604/w3-propertyvalue-66244.html' target='_blank'>Ciberseguridad en Consumo</a>.`,
   isInfoNode: true
 },
     infoViajes: {
@@ -887,37 +922,37 @@ victimaFraude: {
 
 viajeVueloRetrasado: {
   title: "¿Qué derechos tienes si tu vuelo se retrasa o cancela?",
-  message: `Si la aerolínea es responsable del retraso o cancelación, tienes derecho a:<br>* Reubicación en el siguiente vuelo disponible<br>* Devolución total del pasaje<br>* Compensaciones económicas<br>* Asistencia (alimentación, alojamiento)<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Conoce más</a>.`,
+  message: `Si la aerolínea es la responsable del retraso o cancelación de tu vuelo, tienes derecho, según corresponda, a que te embarquen en el siguiente vuelo disponible, a que te devuelvan el monto total pagado por el pasaje, o a recibir compensaciones económicas que dependen del tiempo de la demora. Además, según el caso, pueden corresponderte derechos asistenciales como llamadas telefónicas, alimentación y hasta alojamiento si es necesario esperar al día siguiente. Conoce todos los detalles en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos del Pasajero Aéreo</a>.`,
   isInfoNode: true
 },
 
 viajeOverbooking: {
   title: "¿Qué pasa si hay sobreventa de pasajes (overbooking)?",
-  message: `La aerolínea debe:<br>* Ofrecer alternativas como otro vuelo o reembolso<br>* Otorgar compensación económica proporcional al perjuicio<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Ver detalles</a>.`,
+  message: `Si te niegan el embarque debido a una sobreventa de pasajes que sea responsabilidad de la aerolínea, esta debe ofrecerte alternativas como embarcar en el próximo vuelo disponible o el reembolso total del pasaje no utilizado. Además, tienes derecho a una compensación económica que varía según la distancia del vuelo y la demora final en llegar a tu destino. Infórmate sobre tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos del Pasajero Aéreo</a>.`,
   isInfoNode: true
 },
 
 viajeEquipaje: {
   title: "¿Y si pierden o dañan tu equipaje?",
-  message: `La aerolínea es responsable por tu equipaje facturado si lo pierde, retrasa o daña.<br>Debes reportarlo inmediatamente en el aeropuerto.<br>Los montos de compensación están regulados por ley o convenios.<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Más información</a>.`,
+  message: `La aerolínea es responsable por la pérdida, retraso o daño de tu equipaje facturado (el que entregaste en el counter). Debes informar el problema a la aerolínea apenas lo detectes en el aeropuerto. Existen límites máximos en las indemnizaciones que están establecidos por la ley aeronáutica chilena o por convenios internacionales, según corresponda a tu vuelo. Revisa tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos del Pasajero Aéreo</a>.`,
   isInfoNode: true
 },
 
 viajeResponsabilidadAgencia: {
   title: "¿Qué responsabilidad tiene la agencia de viajes?",
-  message: `La agencia debe cumplir lo ofrecido en publicidad y contrato.<br>Es responsable incluso si el problema fue con servicios de terceros (aerolínea, hotel, etc.).<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Ver más</a>.`,
+  message: `La agencia de viajes con la que contrataste debe cumplir con todo lo que te ofreció y prometió, tanto en su publicidad como en el contrato que firmaste (transporte, alojamiento, tours, comidas incluidas, etc.). La agencia es responsable directamente, incluso si los problemas ocurren con servicios prestados por terceros (como la aerolínea o el hotel). Debe entregarte información clara y veraz antes de que contrates. Revisa tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos al contratar con Agencias de Viaje</a>.`,
   isInfoNode: true
 },
 
 viajeAntesContratar: {
   title: "¿Qué debes saber antes de contratar un viaje?",
-  message: `Antes de contratar:<br>* Lee el contrato<br>* Exige que todo quede por escrito<br>* Guarda cotizaciones y publicidad<br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Consejos útiles</a>.`,
+  message: `Antes de contratar con una agencia: Lee detenidamente el contrato antes de firmar y asegúrate de entenderlo. Exige que toda la información relevante y las promesas que te hagan verbalmente queden por escrito (precios finales con tasas e impuestos, fechas exactas, condiciones del viaje, servicios incluidos, políticas de cancelación y devolución). Guarda siempre copias de la publicidad, cotizaciones y del contrato firmado. Más consejos en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos al contratar con Agencias de Viaje</a>.`,
   isInfoNode: true
 },
 
 viajeIncumplimiento: {
   title: "¿Qué hacer si no cumplen lo que te prometieron?",
-  message: `Si la agencia o aerolínea no cumple:<br>* Reclama en el <a href='http://www.sernac.cl/app/consumidor' target='_blank'>Portal del Consumidor</a><br>* Guarda todos los antecedentes: contrato, correos, boletas, fotos, etc.<br>Más en <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21019.html' target='_blank'>Derechos del Pasajero</a>.`,
+  message: `Si la aerolínea o la agencia de viajes no respetan tus derechos o no cumplen con lo ofrecido, puedes ingresar un Reclamo en el <a href='https://www.sernac.cl/app/consumidor/' target='_blank'>Portal del Consumidor</a> del SERNAC. Es muy importante que guardes todos los antecedentes que tengas para respaldar tu caso (tu contrato, publicidad, correos electrónicos, boletas, fotografías, etc.).`,
   isInfoNode: true
 }
 ,
@@ -927,7 +962,7 @@ viajeIncumplimiento: {
         options: [
             { text: "Calculadora de Presupuesto Familiar", target: "infoCalculadora", subtitle: "Organiza tus ingresos y gastos familiares." },
             { text: "Comparador de Tarjetas de Crédito", target: "infoComparador", subtitle: "Compara costos y cargos de diferentes tarjetas." },
-            { text: "Calculadora de Gastos de Cobranza", target: "infoCobranza", subtitle: "Verifica gastos permitidos de cobranza." },
+            { text: "Calculadora de Gastos de Cobranza", target: "infoCobranza", subtitle: "Verifica cuánto te pueden cobrar por gastos de cobranza." },
             { text: "Simulador de Créditos de Consumo", target: "infoSimulador", subtitle: "Compara diferentes ofertas de créditos de consumo." }
         ]
     },
@@ -941,22 +976,26 @@ viajeIncumplimiento: {
 
 presupuestoParaQueSirve: {
   title: "¿Para qué sirve?",
-  message: `Esta calculadora te permite registrar tus ingresos y gastos mensuales para calcular tu capacidad (o la de tu familia) de endeudamiento y tu potencial de ahorro. ¡Es muy útil para ordenar tus finanzas!<br><a href='https://www.sernac.cl/app/calculadora' target='_blank'>Ir a la Calculadora</a>.`,
+  message: `Esta calculadora te permite registrar tus ingresos y gastos mensuales para calcular tu capacidad (o la de tu familia) de endeudamiento y tu potencial de ahorro. ¡Es muy útil para ordenar tus finanzas! Accede a la <a href='https://www.sernac.cl/app/calculadora' target='_blank'>Calculadora Presupuesto Familiar</a>.`,
   isInfoNode: true
 },
 
 presupuestoComoFunciona: {
   title: "¿Cómo funciona?",
-  message: `Al ingresar tus datos, la calculadora te arroja un resultado con un semáforo:<br>* <strong>Verde</strong>: ¡Felicitaciones! Presupuesto equilibrado.<br>* <strong>Amarillo</strong>: Atención, estás cerca del límite financiero.<br>* <strong>Rojo</strong>: Cuidado, sobrepasas el límite de endeudamiento recomendado.<br><a href='https://www.sernac.cl/app/calculadora' target='_blank'>Usa la Calculadora</a>.`,
+  message: `Al ingresar tus datos, la calculadora te arroja un resultado con un semáforo:<br>
+• <strong>Verde</strong>: ¡Felicitaciones! Tienes un presupuesto equilibrado y recomendable.<br>
+• <strong>Amarillo</strong>: ¡Atención! Estás cerca del límite de tu carga financiera recomendada.<br>
+• <strong>Rojo</strong>: ¡Cuidado! Excedes la carga financiera máxima recomendada, lo que aumenta tu riesgo de sobreendeudamiento.<br>
+Usa la <a href='https://www.sernac.cl/app/calculadora/' target='_blank'>Calculadora</a>Calculadora para ver tu resultado.`,
   isInfoNode: true
 }
 ,
     infoComparador: {
   title: "Comparador de Tarjetas de Crédito",
   options: [
-    { text: "¿Qué es y para qué sirve?", subtitle: "Compara los cargos de las tarjetas de crédito.", target: "tarjetasQueEs" },
-    { text: "¿Qué puedes comparar?", subtitle: "Tipos de costos que puedes revisar.", target: "tarjetasQueComparar" },
-    { text: "¿Por qué es importante comparar?", subtitle: "Diferencias significativas entre emisores.", target: "tarjetasImportancia" }
+    { text: "¿Qué es y para qué sirve?", subtitle: "Conoce qué es y compara los cargos de las tarjetas.", target: "tarjetasQueEs" },
+    { text: "¿Qué puedes comparar?", subtitle: "Revisa los tipos de costos que puedes comparar.", target: "tarjetasQueComparar" },
+    { text: "¿Por qué es importante comparar?", subtitle: "Entiende por qué hay diferencias signficativas entre tarjetas", target: "tarjetasImportancia" }
   ]
 },
 
@@ -964,19 +1003,24 @@ presupuestoComoFunciona: {
 
 tarjetasQueEs: {
   title: "¿Qué es y para qué sirve?",
-  message: `Es una herramienta gratuita de SERNAC que te permite conocer y comparar de forma fácil los diferentes cargos y costos asociados al uso de las tarjetas de crédito disponibles en el mercado chileno. Te ayuda a tomar decisiones informadas, elegir la opción más conveniente para tu bolsillo y evitar el sobreendeudamiento.<br><a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Ir al Comparador</a>.`,
+  message: `Es una herramienta gratuita de SERNAC que te permite conocer y comparar de forma fácil los diferentes cargos y costos asociados al uso de las tarjetas de crédito disponibles en el mercado chileno. Te ayuda a tomar decisiones informadas, elegir la opción más conveniente para tu bolsillo y evitar el sobreendeudamiento. Accede al <a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Comparador de Tarjetas de Crédito</a>.`,
   isInfoNode: true
 },
 
 tarjetasQueComparar: {
   title: "¿Qué puedes comparar?",
-  message: `Puedes comparar diversos cargos que aplican las distintas tarjetas, tales como:<br>* Cargos por mantención y/o administración (anuales o mensuales)<br>* Costos por realizar avances en efectivo (en Chile y en el extranjero)<br>* Comisiones por compras fuera de Chile<br>* Otros cargos específicos por transacciones<br>Incluye información actualizada de la mayoría de las tarjetas vigentes.<br><a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Revisa el Comparador</a>.`,
+  message: `Puedes comparar diversos cargos que aplican las distintas tarjetas, tales como:<br>
+• Cargos por mantención y/o administración (anuales o mensuales).<br>
+• Costos por realizar avances en efectivo (tanto en Chile como en el extranjero).<br>
+• Comisiones por compras realizadas fuera de Chile.<br>
+• Otros cargos específicos por diferentes transacciones.<br>
+La herramienta incluye información actualizada de la gran mayoría de las tarjetas vigentes en el mercado. Revisa el <a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Comparador de Tarjetas de Crédito</a>.`,
   isInfoNode: true
 },
 
 tarjetasImportancia: {
   title: "¿Por qué es importante comparar?",
-  message: `Porque existen diferencias ¡muy significativas! en los cobros entre distintas tarjetas y emisores. Por ejemplo:<br>* Los cargos anuales por mantención pueden variar desde $0 hasta más de $350.000<br>* Un avance en efectivo puede costar desde $0 hasta casi $30.000 por cada operación<br>Comparar te permite identificar estos costos ocultos y elegir la tarjeta que más te conviene.<br><a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Usa el Comparador</a>.`,
+  message: `Porque existen diferencias ¡muy significativas! en los cobros entre distintas tarjetas y emisores. Por ejemplo, solo los cargos anuales por mantención pueden variar desde $0 hasta más de $350.000, y un avance en efectivo te puede costar desde $0 hasta casi $30.000 por cada operación. Comparar te permite identificar estos costos ocultos y elegir la tarjeta que realmente te conviene más. Usa el <a href='https://www.sernac.cl/portal/619/w3-article-64916.html' target='_blank'>Comparador de Tarjetas de Crédito</a>.`,
   isInfoNode: true
 }
 ,
@@ -990,50 +1034,53 @@ tarjetasImportancia: {
 
 cobranzaParaQueSirve: {
   title: "¿Para qué sirve?",
-  message: `Si tienes una deuda atrasada (en mora) y la empresa ha iniciado acciones de cobranza extrajudicial (como llamados o cartas), esta calculadora te ayuda a verificar cuál es el monto MÁXIMO que legalmente te pueden exigir por los gastos asociados a esa cobranza.<br><br>Es importante que sepas que estos gastos de cobranza son de cargo tuyo (como persona deudora), pero siempre deben respetar los topes que establece la ley. Así te aseguras de que no te cobren más de lo permitido.<br><br><a href='https://www.sernac.cl/app/calculadora_financiera/' target='_blank'>Ir a la Calculadora</a><br><a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Derechos en Cobranzas</a>.`,
+  message: `Si tienes una deuda atrasada (en mora) y la empresa ha iniciado acciones de cobranza extrajudicial (como llamados o cartas), esta calculadora te ayuda a verificar cuál es el monto MÁXIMO que legalmente te pueden exigir por los gastos asociados a esa cobranza.
+Es importante que sepas que estos gastos de cobranza son de cargo tuyo (como persona deudora), pero siempre deben respetar los topes que establece la ley. Así te aseguras de que no te cobren más de lo permitido.
+Accede aquí a la <a href='https://www.sernac.cl/app/calculadora_financiera/' target='_blank'>Calculadora de Gastos de Cobranza</a> y revisa también tus <a href='https://www.sernac.cl/portal/604/w3-propertyvalue-21025.html' target='_blank'>Derechos en Cobranzas</a>.`,
   isInfoNode: true
 },
 
 cobranzaComoFunciona: {
   title: "¿Cómo funciona?",
-  message: `Debes ingresar el monto de tu deuda vencida (capital más intereses y comisiones devengadas). La calculadora aplicará automáticamente los porcentajes y topes que están en la ley para indicarte cuánto es lo máximo que la empresa te podría cobrar por concepto de gastos de cobranza extrajudicial.<br><br><a href='https://www.sernac.cl/app/calculadora_financiera/' target='_blank'>Usa la Calculadora</a><br><a href='https://youtu.be/t_AsPJxLKo0' target='_blank'>Video explicativo</a>.`,
+  message: `Debes ingresar el monto de tu deuda vencida (capital más intereses y comisiones devengadas). La calculadora aplicará automáticamente los porcentajes y topes que están en la ley para indicarte cuánto es lo máximo que la empresa te podría cobrar por concepto de gastos de cobranza extrajudicial.
+Puedes <a href='https://www.sernac.cl/app/calculadora_financiera/' target='_blank'>usar la Calculadora aquí</a> y ver un <a href='https://www.youtube.com/watch?v=t_AsPJxLKo0' target='_blank'>video explicativo</a> sobre cómo funciona.`,
   isInfoNode: true
 },
     infoSimulador: {
   title: "Simulador de Créditos de Consumo",
   options: [
-    { text: "¿Para qué sirve el simulador?", subtitle: "Compara opciones de crédito en el mercado.", target: "simuladorParaQueSirve" },
-    { text: "¿Cómo funciona el simulador?", subtitle: "Aprende a ingresar tus datos correctamente.", target: "simuladorComoFunciona" }
+    { text: "¿Para qué sirve el Simulador de Créditos?", subtitle: "Compara diferentes opciones de crédito de consumo.", target: "simuladorParaQueSirve" },
+    { text: "¿Cómo funciona el simulador?", subtitle: "Aprende a usar el simulador e ingresar tus datos.", target: "simuladorComoFunciona" }
   ]
 },
 
 simuladorParaQueSirve: {
-  title: "¿Para qué sirve el simulador?",
-  message: `Es una herramienta de SERNAC donde puedes realizar simulaciones de créditos de consumo. Te permite comparar las distintas opciones que existen actualmente en el mercado para que tomes una decisión de financiamiento más informada.<br><a href='https://www.sernac.cl/app/comparador' target='_blank'>Ir al Simulador de Créditos de Consumo</a>.`,
+  title: "¿Para qué sirve el Simulador de Créditos?",
+  message: `Es una herramienta de SERNAC donde puedes realizar simulaciones de créditos de consumo. Te permite comparar las distintas opciones que existen actualmente en el mercado para que tomes una decisión de financiamiento más informada. Accede aquí al <a href='https://www.sernac.cl/app/comparador' target='_blank'>Simulador de Créditos de Consumo</a>.`,
   isInfoNode: true
 },
 
 simuladorComoFunciona: {
   title: "¿Cómo funciona el simulador?",
-  message: `Primero debes elegir el monto del crédito que necesitas, luego seleccionar tu rango de sueldo líquido mensual y, finalmente, escoger el número de meses (plazo) en que quieres pagar el crédito. El simulador te mostrará las distintas ofertas del mercado ordenadas de menor a mayor Costo Total del Crédito (CTC), que es el indicador más completo para comparar.<br><a href='https://www.sernac.cl/app/comparador' target='_blank'>Ir al Simulador</a>.`,
+  message: `Primero debes elegir el monto del crédito que necesitas, luego seleccionar tu rango de sueldo líquido mensual y, finalmente, escoger el número de meses (plazo) en que quieres pagar el crédito. El simulador te mostrará las distintas ofertas del mercado ordenadas de menor a mayor Costo Total del Crédito (CTC), que es el indicador más completo para comparar. Accede aquí al <a href='https://www.sernac.cl/app/comparador' target='_blank'>Simulador de Créditos de Consumo</a>.`,
   isInfoNode: true
 },
     horarioOficinas: {
         title: "Horario y Oficinas",
         message: "",
         options: [
-            { text: "Oficinas Regionales SERNAC", target: "infoOficinas", subtitle: "Direcciones y horarios de oficinas regionales." },
-            { text: "Atención en Municipios (Convenios)", target: "infoMunicipios", subtitle: "Atención en tu municipalidad con convenios." }
+            { text: "Oficinas Regionales SERNAC", target: "infoOficinas", subtitle: "Encuentra las direcciones y horarios de nuestras oficinas regionales." },
+            { text: "Atención en Municipios (Convenios)", target: "infoMunicipios", subtitle: "Busca si hay puntos de atención en tu municipalidad (convenios)." }
         ]
     },
     infoOficinas: {
   title: "Oficinas Regionales SERNAC",
-  message: `SERNAC tiene oficinas en todas las capitales regionales para atenderte presencialmente.<br>Revisa sus ubicaciones y horarios de atención aquí:<br><a href='https://www.sernac.cl/portal/617/w3-propertyvalue-13742.html' target='_blank'>Listado de Oficinas Regionales</a>.`,
+  message: `SERNAC tiene oficinas en todas las capitales regionales para atenderte presencialmente.<br><a href='https://www.sernac.cl/portal/617/w3-propertyvalue-13742.html' target='_blank'>Revisa y conoce sus horarios de atención</a>.`,
   isInfoNode: true
 },
     infoMunicipios: {
   title: "Atención en Municipios (Convenios)",
-  message: `Además de nuestras Oficinas Regionales, en SERNAC tenemos convenios con diversas comunas para atender tus consultas y reclamos más cerca tuyo.<br>Consulta si tu municipalidad tiene convenio activo y dónde puedes encontrar atención:<br><a href='https://www.sernac.cl/portal/618/w3-propertyvalue-14971.html' target='_blank'>Puntos de Atención por Municipio</a>.`,
+  message: `Además de nuestras Oficinas Regionales, en SERNAC tenemos convenios con diversas comunas para atender tus consultas y reclamos más cerca tuyo. <a href='https://www.sernac.cl/portal/618/w3-propertyvalue-14971.html' target='_blank'>Mira si tu municipalidad</a> tiene convenio activo y dónde puedes encontrar atención.`,
   isInfoNode: true
 }
 };
